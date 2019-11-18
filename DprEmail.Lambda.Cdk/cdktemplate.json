@@ -1,0 +1,9 @@
+{
+  "_comment": "Please note that the 'dev', 'uat' or 'prod' in the context section are used by the DprEmail.Lambda function to determine which configuration to load at runtime.",
+  "app": "npx ts-node bin/dpr.email.lambda.cdk.ts",
+  "context": {
+    "s3_bucket_name": "S3_BUCKET_NAME",
+    "lambda_name": "LAMBDA_NAME",
+    "user_name": "USER_NAME"
+  }
+}

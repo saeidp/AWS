@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <GenerateRuntimeConfigurationFiles>true</GenerateRuntimeConfigurationFiles>
+    <AWSProjectType>Lambda</AWSProjectType>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Amazon.Lambda.Core" Version="1.1.0" />
+    <PackageReference Include="Amazon.Lambda.RuntimeSupport" Version="1.0.0" />
+    <PackageReference Include="Amazon.Lambda.Serialization.Json" Version="1.5.0" />
+    <PackageReference Include="Amazon.Lambda.S3Events" Version="1.1.0" />
+    <PackageReference Include="Amazon.Lambda.SimpleEmailEvents" Version="2.0.0" />
+    <PackageReference Include="Auth0.AuthenticationApi" Version="6.5.4" />
+    <PackageReference Include="AWSSDK.S3" Version="3.3.102.15" />
+    <PackageReference Include="AWSSDK.SimpleEmail" Version="3.3.101.62" />
+    <PackageReference Include="MimeKit" Version="2.3.2" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="dpremail.dev.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="dpremail.prod.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="dpremail.uat.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+</Project>
