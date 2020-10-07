@@ -1,0 +1,68 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: 'sam-app
+
+  Sample SAM Template for sam-app
+
+  '
+Globals:
+  Function:
+    Timeout: 3
+Resources:
+  HelloWorldFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: s3://lambda-sam-project-1258/dc6de9652127a5e097f583e9374c8cd0
+      Handler: app.lambdaHandler
+      Runtime: nodejs12.x
+      Events:
+        HelloWorld:
+          Type: Api
+          Properties:
+            Path: /hello
+            Method: get
+  ClockFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: s3://lambda-sam-project-1258/05e7639a5ef2e076fa58a94a6384be10
+      Handler: handler.clock
+      Runtime: nodejs12.x
+      Events:
+        ClockApi:
+          Type: Api
+          Properties:
+            Path: /clock
+            Method: get
+Outputs:
+  HelloWorldApi:
+    Description: API Gateway endpoint URL for Prod stage for Hello World function
+    Value:
+      Fn::Sub: https://${ServerlessRestApi}.execute-api.${AWS::Region}.amazonaws.com/Prod/hello/
+  HelloWorldFunction:
+    Description: Hello World Lambda Function ARN
+    Value:
+      Fn::GetAtt:
+        - HelloWorldFunction
+        - Arn
+  HelloWorldFunctionIamRole:
+    Description: Implicit IAM Role created for Hello World function
+    Value:
+      Fn::GetAtt:
+        - HelloWorldFunctionRole
+        - Arn
+  ClockApi:
+    Description: API Gateway endpoint URL for Prod stage for Clock function
+    Value:
+      Fn::Sub: https://${ServerlessRestApi}.execute-api.${AWS::Region}.amazonaws.com/Prod/clock/
+  ClockFunction:
+    Description: Clock Lambda Function ARN
+    Value:
+      Fn::GetAtt:
+        - ClockFunction
+        - Arn
+  ClockFunctionIamRole:
+    Description: Implicit IAM Role created for Clock function
+    Value:
+      Fn::GetAtt:
+        - ClockFunctionRole
+        - Arn

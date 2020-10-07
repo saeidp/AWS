@@ -1,0 +1,16 @@
+npm init -y
+npm install --save moment
+
+sam build
+
+aws s3 mb s3://<Name of the bucket> 
+
+sam package --template-file template.yaml --output-template-file package.yaml -- s3-bucket <Name of the bucket>
+
+sam deploy --capabilities CAPABILITY_IAM --template-file package.yaml --stack-name <Your Stack Name>
+
+sam logs --name ClockFunction --stack-name first-sam-project --tail
+
+bucket:lambda-sam-project-1258
+output file package.yml
+stack name: first-sam-project
