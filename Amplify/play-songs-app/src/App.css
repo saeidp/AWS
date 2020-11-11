@@ -1,0 +1,76 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 5vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.songList {
+  display: flex;
+  flex-direction: column;
+}
+
+.songCard {
+  display: flex;
+  justify-content: space-around;
+  padding: 5px;
+}
+
+.songTitle {
+  font-weight: bold;
+}
+
+.ourAudioPlayer {
+  display: flex;
+  justify-content: center;
+}
+
+.newSong {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flexItemLeft {
+  flex: 25%;
+}
+.flexItemMidFirst {
+  flex: 25%;
+}
+.flexItemMidSecond {
+  flex: 25%;
+}
+.flexItemRight {
+  flex: 25%;
+}
+
+/* @media (max-width: 800px) {
+  .flexItemLeft,
+  .flexItemRight,
+  .flexItemMidFirst,
+  .flexItemMidSecond {
+    flex: 100%;
+  }
+} */
