@@ -1,0 +1,1432 @@
+{
+  "version": "8.0.0",
+  "artifacts": {
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    },
+    "SimpleAppStack": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/unknown-region",
+      "properties": {
+        "templateFile": "SimpleAppStack.template.json"
+      },
+      "metadata": {
+        "/SimpleAppStack": [
+          {
+            "type": "aws:cdk:asset",
+            "data": {
+              "path": "asset.e9882ab123687399f934da0d45effe675ecc8ce13b40cb946f3e1d6141fe8d68.zip",
+              "id": "e9882ab123687399f934da0d45effe675ecc8ce13b40cb946f3e1d6141fe8d68",
+              "packaging": "file",
+              "sourceHash": "e9882ab123687399f934da0d45effe675ecc8ce13b40cb946f3e1d6141fe8d68",
+              "s3BucketParameter": "AssetParameterse9882ab123687399f934da0d45effe675ecc8ce13b40cb946f3e1d6141fe8d68S3BucketAEADE8C7",
+              "s3KeyParameter": "AssetParameterse9882ab123687399f934da0d45effe675ecc8ce13b40cb946f3e1d6141fe8d68S3VersionKeyE415415F",
+              "artifactHashParameter": "AssetParameterse9882ab123687399f934da0d45effe675ecc8ce13b40cb946f3e1d6141fe8d68ArtifactHashD9A515C3"
+            },
+            "trace": [
+              "ConstructNode.addMetadata (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\core\\lib\\construct-compat.ts:431:92)",
+              "LegacyStackSynthesizer.doAddFileAsset (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:171:23)",
+              "LegacyStackSynthesizer.addFileAsset (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:74:19)",
+              "SimpleAppStack.addFileAsset (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\core\\lib\\stack.ts:657:29)",
+              "LegacyStackSynthesizer.addFileAsset (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:78:25)",
+              "new Asset (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\aws-s3-assets\\lib\\asset.ts:147:40)",
+              "AssetCode.bind (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\aws-lambda\\lib\\code.ts:247:20)",
+              "new LayerVersion (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\aws-lambda\\lib\\layers.ts:181:29)",
+              "new AwsCliLayer (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\lambda-layer-awscli\\lib\\awscli-layer.ts:12:5)",
+              "new BucketDeployment (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\aws-s3-deployment\\lib\\bucket-deployment.ts:189:16)",
+              "new SimpleAppStack (C:\\Dev\\Experimental\\CDK\\simple-app\\lib\\simple-app-stack.ts:24:5)",
+              "Object.<anonymous> (C:\\Dev\\Experimental\\CDK\\simple-app\\bin\\simple-app.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Module.m._compile (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "main (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          },
+          {
+            "type": "aws:cdk:asset",
+            "data": {
+              "path": "asset.8bda025b845a88fbeb54ef75e52048aa9f3378463116cb413f12f6014673a59a",
+              "id": "8bda025b845a88fbeb54ef75e52048aa9f3378463116cb413f12f6014673a59a",
+              "packaging": "zip",
+              "sourceHash": "8bda025b845a88fbeb54ef75e52048aa9f3378463116cb413f12f6014673a59a",
+              "s3BucketParameter": "AssetParameters8bda025b845a88fbeb54ef75e52048aa9f3378463116cb413f12f6014673a59aS3BucketFD1BBE00",
+              "s3KeyParameter": "AssetParameters8bda025b845a88fbeb54ef75e52048aa9f3378463116cb413f12f6014673a59aS3VersionKey6E54DC76",
+              "artifactHashParameter": "AssetParameters8bda025b845a88fbeb54ef75e52048aa9f3378463116cb413f12f6014673a59aArtifactHash595EC1E7"
+            },
+            "trace": [
+              "ConstructNode.addMetadata (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\core\\lib\\construct-compat.ts:431:92)",
+              "LegacyStackSynthesizer.doAddFileAsset (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:171:23)",
+              "LegacyStackSynthesizer.addFileAsset (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:74:19)",
+              "SimpleAppStack.addFileAsset (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\core\\lib\\stack.ts:657:29)",
+              "LegacyStackSynthesizer.addFileAsset (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:78:25)",
+              "new Asset (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\aws-s3-assets\\lib\\asset.ts:147:40)",
+              "AssetCode.bind (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\aws-lambda\\lib\\code.ts:247:20)",
+              "new Function (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function.ts:572:29)",
+              "SingletonFunction.ensureLambda (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\aws-lambda\\lib\\singleton-lambda.ts:119:12)",
+              "new SingletonFunction (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\aws-lambda\\lib\\singleton-lambda.ts:55:32)",
+              "new BucketDeployment (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\aws-s3-deployment\\lib\\bucket-deployment.ts:186:21)",
+              "new SimpleAppStack (C:\\Dev\\Experimental\\CDK\\simple-app\\lib\\simple-app-stack.ts:24:5)",
+              "Object.<anonymous> (C:\\Dev\\Experimental\\CDK\\simple-app\\bin\\simple-app.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Module.m._compile (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "main (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          },
+          {
+            "type": "aws:cdk:asset",
+            "data": {
+              "path": "asset.dc53a013b16d192a39fa5491b05333eb2f49132fa0e784f194de2bf2382f6671",
+              "id": "dc53a013b16d192a39fa5491b05333eb2f49132fa0e784f194de2bf2382f6671",
+              "packaging": "zip",
+              "sourceHash": "dc53a013b16d192a39fa5491b05333eb2f49132fa0e784f194de2bf2382f6671",
+              "s3BucketParameter": "AssetParametersdc53a013b16d192a39fa5491b05333eb2f49132fa0e784f194de2bf2382f6671S3Bucket18015EBE",
+              "s3KeyParameter": "AssetParametersdc53a013b16d192a39fa5491b05333eb2f49132fa0e784f194de2bf2382f6671S3VersionKeyE19032C0",
+              "artifactHashParameter": "AssetParametersdc53a013b16d192a39fa5491b05333eb2f49132fa0e784f194de2bf2382f6671ArtifactHashDA806F38"
+            },
+            "trace": [
+              "ConstructNode.addMetadata (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\core\\lib\\construct-compat.ts:431:92)",
+              "LegacyStackSynthesizer.doAddFileAsset (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:171:23)",
+              "LegacyStackSynthesizer.addFileAsset (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:74:19)",
+              "SimpleAppStack.addFileAsset (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\core\\lib\\stack.ts:657:29)",
+              "LegacyStackSynthesizer.addFileAsset (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:78:25)",
+              "new Asset (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\aws-s3-assets\\lib\\asset.ts:147:40)",
+              "Object.bind (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\aws-s3-deployment\\lib\\source.ts:83:23)",
+              "C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\aws-s3-deployment\\lib\\bucket-deployment.ts:203:83",
+              "Array.map (<anonymous>)",
+              "new BucketDeployment (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\aws-s3-deployment\\lib\\bucket-deployment.ts:203:51)",
+              "new SimpleAppStack (C:\\Dev\\Experimental\\CDK\\simple-app\\lib\\simple-app-stack.ts:24:5)",
+              "Object.<anonymous> (C:\\Dev\\Experimental\\CDK\\simple-app\\bin\\simple-app.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Module.m._compile (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "main (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          },
+          {
+            "type": "aws:cdk:asset",
+            "data": {
+              "path": "asset.dd9d6b01de12482def0a9707dcb7a12cc311ca6ed18564966a1b0414170d5b4b",
+              "id": "dd9d6b01de12482def0a9707dcb7a12cc311ca6ed18564966a1b0414170d5b4b",
+              "packaging": "zip",
+              "sourceHash": "dd9d6b01de12482def0a9707dcb7a12cc311ca6ed18564966a1b0414170d5b4b",
+              "s3BucketParameter": "AssetParametersdd9d6b01de12482def0a9707dcb7a12cc311ca6ed18564966a1b0414170d5b4bS3BucketC8381E2D",
+              "s3KeyParameter": "AssetParametersdd9d6b01de12482def0a9707dcb7a12cc311ca6ed18564966a1b0414170d5b4bS3VersionKey5482838C",
+              "artifactHashParameter": "AssetParametersdd9d6b01de12482def0a9707dcb7a12cc311ca6ed18564966a1b0414170d5b4bArtifactHash4862E4E7"
+            },
+            "trace": [
+              "ConstructNode.addMetadata (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\core\\lib\\construct-compat.ts:431:92)",
+              "LegacyStackSynthesizer.doAddFileAsset (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:171:23)",
+              "LegacyStackSynthesizer.addFileAsset (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:74:19)",
+              "SimpleAppStack.addFileAsset (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\core\\lib\\stack.ts:657:29)",
+              "LegacyStackSynthesizer.addFileAsset (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:78:25)",
+              "new Asset (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\aws-s3-assets\\lib\\asset.ts:147:40)",
+              "Object.bind (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\aws-s3-deployment\\lib\\source.ts:83:23)",
+              "C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\aws-s3-deployment\\lib\\bucket-deployment.ts:203:83",
+              "Array.map (<anonymous>)",
+              "new BucketDeployment (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\aws-s3-deployment\\lib\\bucket-deployment.ts:203:51)",
+              "new SimpleAppStack (C:\\Dev\\Experimental\\CDK\\simple-app\\lib\\simple-app-stack.ts:49:5)",
+              "Object.<anonymous> (C:\\Dev\\Experimental\\CDK\\simple-app\\bin\\simple-app.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Module.m._compile (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "main (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          },
+          {
+            "type": "aws:cdk:asset",
+            "data": {
+              "path": "C:\\Dev\\Experimental\\CDK\\simple-app",
+              "id": "0fd1670dfffc3ae72d1a48031a80018cf449c2cb249dbce42cd6df202b159c55",
+              "packaging": "zip",
+              "sourceHash": "0fd1670dfffc3ae72d1a48031a80018cf449c2cb249dbce42cd6df202b159c55",
+              "s3BucketParameter": "AssetParameters0fd1670dfffc3ae72d1a48031a80018cf449c2cb249dbce42cd6df202b159c55S3BucketECCEB249",
+              "s3KeyParameter": "AssetParameters0fd1670dfffc3ae72d1a48031a80018cf449c2cb249dbce42cd6df202b159c55S3VersionKeyEBEE75EA",
+              "artifactHashParameter": "AssetParameters0fd1670dfffc3ae72d1a48031a80018cf449c2cb249dbce42cd6df202b159c55ArtifactHashA685D3A7"
+            },
+            "trace": [
+              "ConstructNode.addMetadata (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\core\\lib\\construct-compat.ts:431:92)",
+              "LegacyStackSynthesizer.doAddFileAsset (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:171:23)",
+              "LegacyStackSynthesizer.addFileAsset (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:74:19)",
+              "SimpleAppStack.addFileAsset (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\core\\lib\\stack.ts:657:29)",
+              "LegacyStackSynthesizer.addFileAsset (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:78:25)",
+              "new Asset (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\aws-s3-assets\\lib\\asset.ts:147:40)",
+              "AssetCode.bind (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\aws-lambda\\lib\\code.ts:247:20)",
+              "new Function (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function.ts:572:29)",
+              "new NodejsFunction (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\aws-lambda-nodejs\\lib\\function.ts:110:5)",
+              "new SimpleAppStack (C:\\Dev\\Experimental\\CDK\\simple-app\\lib\\simple-app-stack.ts:55:23)",
+              "Object.<anonymous> (C:\\Dev\\Experimental\\CDK\\simple-app\\bin\\simple-app.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Module.m._compile (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "main (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/SimpleAppStack/MySimpleAppBucket/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MySimpleAppBucket6B59014A",
+            "trace": [
+              "new Bucket (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\aws-s3\\lib\\bucket.ts:1316:22)",
+              "new SimpleAppStack (C:\\Dev\\Experimental\\CDK\\simple-app\\lib\\simple-app-stack.ts:20:20)",
+              "Object.<anonymous> (C:\\Dev\\Experimental\\CDK\\simple-app\\bin\\simple-app.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Module.m._compile (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "main (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/SimpleAppStack/MySimpleAppPhotos/AwsCliLayer/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MySimpleAppPhotosAwsCliLayer284725B4",
+            "trace": [
+              "new LayerVersion (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\aws-lambda\\lib\\layers.ts:189:39)",
+              "new AwsCliLayer (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\lambda-layer-awscli\\lib\\awscli-layer.ts:12:5)",
+              "new BucketDeployment (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\aws-s3-deployment\\lib\\bucket-deployment.ts:189:16)",
+              "new SimpleAppStack (C:\\Dev\\Experimental\\CDK\\simple-app\\lib\\simple-app-stack.ts:24:5)",
+              "Object.<anonymous> (C:\\Dev\\Experimental\\CDK\\simple-app\\bin\\simple-app.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Module.m._compile (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "main (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/SimpleAppStack/MySimpleAppPhotos/CustomResource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MySimpleAppPhotosCustomResource807E3B78",
+            "trace": [
+              "new CustomResource (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\core\\lib\\custom-resource.ts:119:21)",
+              "new BucketDeployment (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\aws-s3-deployment\\lib\\bucket-deployment.ts:214:5)",
+              "new SimpleAppStack (C:\\Dev\\Experimental\\CDK\\simple-app\\lib\\simple-app-stack.ts:24:5)",
+              "Object.<anonymous> (C:\\Dev\\Experimental\\CDK\\simple-app\\bin\\simple-app.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Module.m._compile (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "main (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/SimpleAppStack/AssetParameters/e9882ab123687399f934da0d45effe675ecc8ce13b40cb946f3e1d6141fe8d68/S3Bucket": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameterse9882ab123687399f934da0d45effe675ecc8ce13b40cb946f3e1d6141fe8d68S3BucketAEADE8C7",
+            "trace": [
+              "new FileAssetParameters (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\core\\lib\\private\\asset-parameters.ts:16:32)",
+              "LegacyStackSynthesizer.doAddFileAsset (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:154:16)",
+              "LegacyStackSynthesizer.addFileAsset (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:74:19)",
+              "SimpleAppStack.addFileAsset (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\core\\lib\\stack.ts:657:29)",
+              "LegacyStackSynthesizer.addFileAsset (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:78:25)",
+              "new Asset (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\aws-s3-assets\\lib\\asset.ts:147:40)",
+              "AssetCode.bind (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\aws-lambda\\lib\\code.ts:247:20)",
+              "new LayerVersion (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\aws-lambda\\lib\\layers.ts:181:29)",
+              "new AwsCliLayer (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\lambda-layer-awscli\\lib\\awscli-layer.ts:12:5)",
+              "new BucketDeployment (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\aws-s3-deployment\\lib\\bucket-deployment.ts:189:16)",
+              "new SimpleAppStack (C:\\Dev\\Experimental\\CDK\\simple-app\\lib\\simple-app-stack.ts:24:5)",
+              "Object.<anonymous> (C:\\Dev\\Experimental\\CDK\\simple-app\\bin\\simple-app.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Module.m._compile (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "main (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/SimpleAppStack/AssetParameters/e9882ab123687399f934da0d45effe675ecc8ce13b40cb946f3e1d6141fe8d68/S3VersionKey": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameterse9882ab123687399f934da0d45effe675ecc8ce13b40cb946f3e1d6141fe8d68S3VersionKeyE415415F",
+            "trace": [
+              "new FileAssetParameters (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\core\\lib\\private\\asset-parameters.ts:21:31)",
+              "LegacyStackSynthesizer.doAddFileAsset (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:154:16)",
+              "LegacyStackSynthesizer.addFileAsset (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:74:19)",
+              "SimpleAppStack.addFileAsset (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\core\\lib\\stack.ts:657:29)",
+              "LegacyStackSynthesizer.addFileAsset (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:78:25)",
+              "new Asset (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\aws-s3-assets\\lib\\asset.ts:147:40)",
+              "AssetCode.bind (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\aws-lambda\\lib\\code.ts:247:20)",
+              "new LayerVersion (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\aws-lambda\\lib\\layers.ts:181:29)",
+              "new AwsCliLayer (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\lambda-layer-awscli\\lib\\awscli-layer.ts:12:5)",
+              "new BucketDeployment (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\aws-s3-deployment\\lib\\bucket-deployment.ts:189:16)",
+              "new SimpleAppStack (C:\\Dev\\Experimental\\CDK\\simple-app\\lib\\simple-app-stack.ts:24:5)",
+              "Object.<anonymous> (C:\\Dev\\Experimental\\CDK\\simple-app\\bin\\simple-app.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Module.m._compile (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "main (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/SimpleAppStack/AssetParameters/e9882ab123687399f934da0d45effe675ecc8ce13b40cb946f3e1d6141fe8d68/ArtifactHash": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameterse9882ab123687399f934da0d45effe675ecc8ce13b40cb946f3e1d6141fe8d68ArtifactHashD9A515C3",
+            "trace": [
+              "new FileAssetParameters (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\core\\lib\\private\\asset-parameters.ts:26:34)",
+              "LegacyStackSynthesizer.doAddFileAsset (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:154:16)",
+              "LegacyStackSynthesizer.addFileAsset (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:74:19)",
+              "SimpleAppStack.addFileAsset (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\core\\lib\\stack.ts:657:29)",
+              "LegacyStackSynthesizer.addFileAsset (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:78:25)",
+              "new Asset (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\aws-s3-assets\\lib\\asset.ts:147:40)",
+              "AssetCode.bind (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\aws-lambda\\lib\\code.ts:247:20)",
+              "new LayerVersion (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\aws-lambda\\lib\\layers.ts:181:29)",
+              "new AwsCliLayer (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\lambda-layer-awscli\\lib\\awscli-layer.ts:12:5)",
+              "new BucketDeployment (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\aws-s3-deployment\\lib\\bucket-deployment.ts:189:16)",
+              "new SimpleAppStack (C:\\Dev\\Experimental\\CDK\\simple-app\\lib\\simple-app-stack.ts:24:5)",
+              "Object.<anonymous> (C:\\Dev\\Experimental\\CDK\\simple-app\\bin\\simple-app.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Module.m._compile (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "main (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/SimpleAppStack/AssetParameters/8bda025b845a88fbeb54ef75e52048aa9f3378463116cb413f12f6014673a59a/S3Bucket": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters8bda025b845a88fbeb54ef75e52048aa9f3378463116cb413f12f6014673a59aS3BucketFD1BBE00",
+            "trace": [
+              "new FileAssetParameters (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\core\\lib\\private\\asset-parameters.ts:16:32)",
+              "LegacyStackSynthesizer.doAddFileAsset (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:154:16)",
+              "LegacyStackSynthesizer.addFileAsset (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:74:19)",
+              "SimpleAppStack.addFileAsset (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\core\\lib\\stack.ts:657:29)",
+              "LegacyStackSynthesizer.addFileAsset (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:78:25)",
+              "new Asset (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\aws-s3-assets\\lib\\asset.ts:147:40)",
+              "AssetCode.bind (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\aws-lambda\\lib\\code.ts:247:20)",
+              "new Function (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function.ts:572:29)",
+              "SingletonFunction.ensureLambda (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\aws-lambda\\lib\\singleton-lambda.ts:119:12)",
+              "new SingletonFunction (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\aws-lambda\\lib\\singleton-lambda.ts:55:32)",
+              "new BucketDeployment (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\aws-s3-deployment\\lib\\bucket-deployment.ts:186:21)",
+              "new SimpleAppStack (C:\\Dev\\Experimental\\CDK\\simple-app\\lib\\simple-app-stack.ts:24:5)",
+              "Object.<anonymous> (C:\\Dev\\Experimental\\CDK\\simple-app\\bin\\simple-app.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Module.m._compile (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "main (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/SimpleAppStack/AssetParameters/8bda025b845a88fbeb54ef75e52048aa9f3378463116cb413f12f6014673a59a/S3VersionKey": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters8bda025b845a88fbeb54ef75e52048aa9f3378463116cb413f12f6014673a59aS3VersionKey6E54DC76",
+            "trace": [
+              "new FileAssetParameters (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\core\\lib\\private\\asset-parameters.ts:21:31)",
+              "LegacyStackSynthesizer.doAddFileAsset (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:154:16)",
+              "LegacyStackSynthesizer.addFileAsset (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:74:19)",
+              "SimpleAppStack.addFileAsset (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\core\\lib\\stack.ts:657:29)",
+              "LegacyStackSynthesizer.addFileAsset (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:78:25)",
+              "new Asset (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\aws-s3-assets\\lib\\asset.ts:147:40)",
+              "AssetCode.bind (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\aws-lambda\\lib\\code.ts:247:20)",
+              "new Function (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function.ts:572:29)",
+              "SingletonFunction.ensureLambda (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\aws-lambda\\lib\\singleton-lambda.ts:119:12)",
+              "new SingletonFunction (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\aws-lambda\\lib\\singleton-lambda.ts:55:32)",
+              "new BucketDeployment (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\aws-s3-deployment\\lib\\bucket-deployment.ts:186:21)",
+              "new SimpleAppStack (C:\\Dev\\Experimental\\CDK\\simple-app\\lib\\simple-app-stack.ts:24:5)",
+              "Object.<anonymous> (C:\\Dev\\Experimental\\CDK\\simple-app\\bin\\simple-app.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Module.m._compile (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "main (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/SimpleAppStack/AssetParameters/8bda025b845a88fbeb54ef75e52048aa9f3378463116cb413f12f6014673a59a/ArtifactHash": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters8bda025b845a88fbeb54ef75e52048aa9f3378463116cb413f12f6014673a59aArtifactHash595EC1E7",
+            "trace": [
+              "new FileAssetParameters (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\core\\lib\\private\\asset-parameters.ts:26:34)",
+              "LegacyStackSynthesizer.doAddFileAsset (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:154:16)",
+              "LegacyStackSynthesizer.addFileAsset (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:74:19)",
+              "SimpleAppStack.addFileAsset (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\core\\lib\\stack.ts:657:29)",
+              "LegacyStackSynthesizer.addFileAsset (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:78:25)",
+              "new Asset (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\aws-s3-assets\\lib\\asset.ts:147:40)",
+              "AssetCode.bind (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\aws-lambda\\lib\\code.ts:247:20)",
+              "new Function (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function.ts:572:29)",
+              "SingletonFunction.ensureLambda (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\aws-lambda\\lib\\singleton-lambda.ts:119:12)",
+              "new SingletonFunction (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\aws-lambda\\lib\\singleton-lambda.ts:55:32)",
+              "new BucketDeployment (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\aws-s3-deployment\\lib\\bucket-deployment.ts:186:21)",
+              "new SimpleAppStack (C:\\Dev\\Experimental\\CDK\\simple-app\\lib\\simple-app-stack.ts:24:5)",
+              "Object.<anonymous> (C:\\Dev\\Experimental\\CDK\\simple-app\\bin\\simple-app.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Module.m._compile (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "main (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/SimpleAppStack/AssetParameters/dc53a013b16d192a39fa5491b05333eb2f49132fa0e784f194de2bf2382f6671/S3Bucket": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParametersdc53a013b16d192a39fa5491b05333eb2f49132fa0e784f194de2bf2382f6671S3Bucket18015EBE",
+            "trace": [
+              "new FileAssetParameters (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\core\\lib\\private\\asset-parameters.ts:16:32)",
+              "LegacyStackSynthesizer.doAddFileAsset (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:154:16)",
+              "LegacyStackSynthesizer.addFileAsset (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:74:19)",
+              "SimpleAppStack.addFileAsset (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\core\\lib\\stack.ts:657:29)",
+              "LegacyStackSynthesizer.addFileAsset (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:78:25)",
+              "new Asset (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\aws-s3-assets\\lib\\asset.ts:147:40)",
+              "Object.bind (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\aws-s3-deployment\\lib\\source.ts:83:23)",
+              "C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\aws-s3-deployment\\lib\\bucket-deployment.ts:203:83",
+              "Array.map (<anonymous>)",
+              "new BucketDeployment (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\aws-s3-deployment\\lib\\bucket-deployment.ts:203:51)",
+              "new SimpleAppStack (C:\\Dev\\Experimental\\CDK\\simple-app\\lib\\simple-app-stack.ts:24:5)",
+              "Object.<anonymous> (C:\\Dev\\Experimental\\CDK\\simple-app\\bin\\simple-app.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Module.m._compile (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "main (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/SimpleAppStack/AssetParameters/dc53a013b16d192a39fa5491b05333eb2f49132fa0e784f194de2bf2382f6671/S3VersionKey": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParametersdc53a013b16d192a39fa5491b05333eb2f49132fa0e784f194de2bf2382f6671S3VersionKeyE19032C0",
+            "trace": [
+              "new FileAssetParameters (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\core\\lib\\private\\asset-parameters.ts:21:31)",
+              "LegacyStackSynthesizer.doAddFileAsset (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:154:16)",
+              "LegacyStackSynthesizer.addFileAsset (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:74:19)",
+              "SimpleAppStack.addFileAsset (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\core\\lib\\stack.ts:657:29)",
+              "LegacyStackSynthesizer.addFileAsset (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:78:25)",
+              "new Asset (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\aws-s3-assets\\lib\\asset.ts:147:40)",
+              "Object.bind (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\aws-s3-deployment\\lib\\source.ts:83:23)",
+              "C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\aws-s3-deployment\\lib\\bucket-deployment.ts:203:83",
+              "Array.map (<anonymous>)",
+              "new BucketDeployment (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\aws-s3-deployment\\lib\\bucket-deployment.ts:203:51)",
+              "new SimpleAppStack (C:\\Dev\\Experimental\\CDK\\simple-app\\lib\\simple-app-stack.ts:24:5)",
+              "Object.<anonymous> (C:\\Dev\\Experimental\\CDK\\simple-app\\bin\\simple-app.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Module.m._compile (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "main (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/SimpleAppStack/AssetParameters/dc53a013b16d192a39fa5491b05333eb2f49132fa0e784f194de2bf2382f6671/ArtifactHash": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParametersdc53a013b16d192a39fa5491b05333eb2f49132fa0e784f194de2bf2382f6671ArtifactHashDA806F38",
+            "trace": [
+              "new FileAssetParameters (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\core\\lib\\private\\asset-parameters.ts:26:34)",
+              "LegacyStackSynthesizer.doAddFileAsset (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:154:16)",
+              "LegacyStackSynthesizer.addFileAsset (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:74:19)",
+              "SimpleAppStack.addFileAsset (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\core\\lib\\stack.ts:657:29)",
+              "LegacyStackSynthesizer.addFileAsset (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:78:25)",
+              "new Asset (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\aws-s3-assets\\lib\\asset.ts:147:40)",
+              "Object.bind (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\aws-s3-deployment\\lib\\source.ts:83:23)",
+              "C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\aws-s3-deployment\\lib\\bucket-deployment.ts:203:83",
+              "Array.map (<anonymous>)",
+              "new BucketDeployment (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\aws-s3-deployment\\lib\\bucket-deployment.ts:203:51)",
+              "new SimpleAppStack (C:\\Dev\\Experimental\\CDK\\simple-app\\lib\\simple-app-stack.ts:24:5)",
+              "Object.<anonymous> (C:\\Dev\\Experimental\\CDK\\simple-app\\bin\\simple-app.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Module.m._compile (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "main (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/SimpleAppStack/AssetParameters/dd9d6b01de12482def0a9707dcb7a12cc311ca6ed18564966a1b0414170d5b4b/S3Bucket": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParametersdd9d6b01de12482def0a9707dcb7a12cc311ca6ed18564966a1b0414170d5b4bS3BucketC8381E2D",
+            "trace": [
+              "new FileAssetParameters (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\core\\lib\\private\\asset-parameters.ts:16:32)",
+              "LegacyStackSynthesizer.doAddFileAsset (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:154:16)",
+              "LegacyStackSynthesizer.addFileAsset (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:74:19)",
+              "SimpleAppStack.addFileAsset (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\core\\lib\\stack.ts:657:29)",
+              "LegacyStackSynthesizer.addFileAsset (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:78:25)",
+              "new Asset (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\aws-s3-assets\\lib\\asset.ts:147:40)",
+              "Object.bind (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\aws-s3-deployment\\lib\\source.ts:83:23)",
+              "C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\aws-s3-deployment\\lib\\bucket-deployment.ts:203:83",
+              "Array.map (<anonymous>)",
+              "new BucketDeployment (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\aws-s3-deployment\\lib\\bucket-deployment.ts:203:51)",
+              "new SimpleAppStack (C:\\Dev\\Experimental\\CDK\\simple-app\\lib\\simple-app-stack.ts:49:5)",
+              "Object.<anonymous> (C:\\Dev\\Experimental\\CDK\\simple-app\\bin\\simple-app.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Module.m._compile (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "main (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/SimpleAppStack/AssetParameters/dd9d6b01de12482def0a9707dcb7a12cc311ca6ed18564966a1b0414170d5b4b/S3VersionKey": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParametersdd9d6b01de12482def0a9707dcb7a12cc311ca6ed18564966a1b0414170d5b4bS3VersionKey5482838C",
+            "trace": [
+              "new FileAssetParameters (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\core\\lib\\private\\asset-parameters.ts:21:31)",
+              "LegacyStackSynthesizer.doAddFileAsset (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:154:16)",
+              "LegacyStackSynthesizer.addFileAsset (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:74:19)",
+              "SimpleAppStack.addFileAsset (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\core\\lib\\stack.ts:657:29)",
+              "LegacyStackSynthesizer.addFileAsset (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:78:25)",
+              "new Asset (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\aws-s3-assets\\lib\\asset.ts:147:40)",
+              "Object.bind (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\aws-s3-deployment\\lib\\source.ts:83:23)",
+              "C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\aws-s3-deployment\\lib\\bucket-deployment.ts:203:83",
+              "Array.map (<anonymous>)",
+              "new BucketDeployment (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\aws-s3-deployment\\lib\\bucket-deployment.ts:203:51)",
+              "new SimpleAppStack (C:\\Dev\\Experimental\\CDK\\simple-app\\lib\\simple-app-stack.ts:49:5)",
+              "Object.<anonymous> (C:\\Dev\\Experimental\\CDK\\simple-app\\bin\\simple-app.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Module.m._compile (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "main (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/SimpleAppStack/AssetParameters/dd9d6b01de12482def0a9707dcb7a12cc311ca6ed18564966a1b0414170d5b4b/ArtifactHash": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParametersdd9d6b01de12482def0a9707dcb7a12cc311ca6ed18564966a1b0414170d5b4bArtifactHash4862E4E7",
+            "trace": [
+              "new FileAssetParameters (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\core\\lib\\private\\asset-parameters.ts:26:34)",
+              "LegacyStackSynthesizer.doAddFileAsset (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:154:16)",
+              "LegacyStackSynthesizer.addFileAsset (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:74:19)",
+              "SimpleAppStack.addFileAsset (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\core\\lib\\stack.ts:657:29)",
+              "LegacyStackSynthesizer.addFileAsset (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:78:25)",
+              "new Asset (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\aws-s3-assets\\lib\\asset.ts:147:40)",
+              "Object.bind (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\aws-s3-deployment\\lib\\source.ts:83:23)",
+              "C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\aws-s3-deployment\\lib\\bucket-deployment.ts:203:83",
+              "Array.map (<anonymous>)",
+              "new BucketDeployment (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\aws-s3-deployment\\lib\\bucket-deployment.ts:203:51)",
+              "new SimpleAppStack (C:\\Dev\\Experimental\\CDK\\simple-app\\lib\\simple-app-stack.ts:49:5)",
+              "Object.<anonymous> (C:\\Dev\\Experimental\\CDK\\simple-app\\bin\\simple-app.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Module.m._compile (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "main (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/SimpleAppStack/AssetParameters/0fd1670dfffc3ae72d1a48031a80018cf449c2cb249dbce42cd6df202b159c55/S3Bucket": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters0fd1670dfffc3ae72d1a48031a80018cf449c2cb249dbce42cd6df202b159c55S3BucketECCEB249",
+            "trace": [
+              "new FileAssetParameters (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\core\\lib\\private\\asset-parameters.ts:16:32)",
+              "LegacyStackSynthesizer.doAddFileAsset (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:154:16)",
+              "LegacyStackSynthesizer.addFileAsset (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:74:19)",
+              "SimpleAppStack.addFileAsset (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\core\\lib\\stack.ts:657:29)",
+              "LegacyStackSynthesizer.addFileAsset (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:78:25)",
+              "new Asset (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\aws-s3-assets\\lib\\asset.ts:147:40)",
+              "AssetCode.bind (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\aws-lambda\\lib\\code.ts:247:20)",
+              "new Function (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function.ts:572:29)",
+              "new NodejsFunction (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\aws-lambda-nodejs\\lib\\function.ts:110:5)",
+              "new SimpleAppStack (C:\\Dev\\Experimental\\CDK\\simple-app\\lib\\simple-app-stack.ts:55:23)",
+              "Object.<anonymous> (C:\\Dev\\Experimental\\CDK\\simple-app\\bin\\simple-app.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Module.m._compile (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "main (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/SimpleAppStack/AssetParameters/0fd1670dfffc3ae72d1a48031a80018cf449c2cb249dbce42cd6df202b159c55/S3VersionKey": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters0fd1670dfffc3ae72d1a48031a80018cf449c2cb249dbce42cd6df202b159c55S3VersionKeyEBEE75EA",
+            "trace": [
+              "new FileAssetParameters (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\core\\lib\\private\\asset-parameters.ts:21:31)",
+              "LegacyStackSynthesizer.doAddFileAsset (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:154:16)",
+              "LegacyStackSynthesizer.addFileAsset (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:74:19)",
+              "SimpleAppStack.addFileAsset (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\core\\lib\\stack.ts:657:29)",
+              "LegacyStackSynthesizer.addFileAsset (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:78:25)",
+              "new Asset (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\aws-s3-assets\\lib\\asset.ts:147:40)",
+              "AssetCode.bind (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\aws-lambda\\lib\\code.ts:247:20)",
+              "new Function (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function.ts:572:29)",
+              "new NodejsFunction (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\aws-lambda-nodejs\\lib\\function.ts:110:5)",
+              "new SimpleAppStack (C:\\Dev\\Experimental\\CDK\\simple-app\\lib\\simple-app-stack.ts:55:23)",
+              "Object.<anonymous> (C:\\Dev\\Experimental\\CDK\\simple-app\\bin\\simple-app.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Module.m._compile (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "main (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/SimpleAppStack/AssetParameters/0fd1670dfffc3ae72d1a48031a80018cf449c2cb249dbce42cd6df202b159c55/ArtifactHash": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters0fd1670dfffc3ae72d1a48031a80018cf449c2cb249dbce42cd6df202b159c55ArtifactHashA685D3A7",
+            "trace": [
+              "new FileAssetParameters (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\core\\lib\\private\\asset-parameters.ts:26:34)",
+              "LegacyStackSynthesizer.doAddFileAsset (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:154:16)",
+              "LegacyStackSynthesizer.addFileAsset (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:74:19)",
+              "SimpleAppStack.addFileAsset (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\core\\lib\\stack.ts:657:29)",
+              "LegacyStackSynthesizer.addFileAsset (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:78:25)",
+              "new Asset (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\aws-s3-assets\\lib\\asset.ts:147:40)",
+              "AssetCode.bind (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\aws-lambda\\lib\\code.ts:247:20)",
+              "new Function (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function.ts:572:29)",
+              "new NodejsFunction (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\aws-lambda-nodejs\\lib\\function.ts:110:5)",
+              "new SimpleAppStack (C:\\Dev\\Experimental\\CDK\\simple-app\\lib\\simple-app-stack.ts:55:23)",
+              "Object.<anonymous> (C:\\Dev\\Experimental\\CDK\\simple-app\\bin\\simple-app.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Module.m._compile (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "main (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/SimpleAppStack/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756CServiceRole89A01265",
+            "trace": [
+              "new Role (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\aws-iam\\lib\\role.ts:327:18)",
+              "new Function (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function.ts:552:31)",
+              "SingletonFunction.ensureLambda (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\aws-lambda\\lib\\singleton-lambda.ts:119:12)",
+              "new SingletonFunction (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\aws-lambda\\lib\\singleton-lambda.ts:55:32)",
+              "new BucketDeployment (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\aws-s3-deployment\\lib\\bucket-deployment.ts:186:21)",
+              "new SimpleAppStack (C:\\Dev\\Experimental\\CDK\\simple-app\\lib\\simple-app-stack.ts:24:5)",
+              "Object.<anonymous> (C:\\Dev\\Experimental\\CDK\\simple-app\\bin\\simple-app.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Module.m._compile (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "main (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/SimpleAppStack/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756CServiceRoleDefaultPolicy88902FDF",
+            "trace": [
+              "new Policy (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\aws-iam\\lib\\policy.ts:154:22)",
+              "Role.addToPrincipalPolicy (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\aws-iam\\lib\\role.ts:368:28)",
+              "Function.addToPrincipal (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\aws-iam\\lib\\grant.ts:168:61)",
+              "Function.addToPrincipalOrResource (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\aws-iam\\lib\\grant.ts:119:26)",
+              "Import.grant (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\aws-s3\\lib\\bucket.ts:726:27)",
+              "Import.grantRead (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\aws-s3\\lib\\bucket.ts:585:17)",
+              "Asset.grantRead (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\aws-s3-assets\\lib\\asset.ts:206:17)",
+              "Object.bind (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\aws-s3-deployment\\lib\\source.ts:90:15)",
+              "C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\aws-s3-deployment\\lib\\bucket-deployment.ts:203:83",
+              "Array.map (<anonymous>)",
+              "new BucketDeployment (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\aws-s3-deployment\\lib\\bucket-deployment.ts:203:51)",
+              "new SimpleAppStack (C:\\Dev\\Experimental\\CDK\\simple-app\\lib\\simple-app-stack.ts:24:5)",
+              "Object.<anonymous> (C:\\Dev\\Experimental\\CDK\\simple-app\\bin\\simple-app.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Module.m._compile (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "main (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/SimpleAppStack/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C81C01536",
+            "trace": [
+              "new Function (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function.ts:614:35)",
+              "SingletonFunction.ensureLambda (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\aws-lambda\\lib\\singleton-lambda.ts:119:12)",
+              "new SingletonFunction (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\aws-lambda\\lib\\singleton-lambda.ts:55:32)",
+              "new BucketDeployment (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\aws-s3-deployment\\lib\\bucket-deployment.ts:186:21)",
+              "new SimpleAppStack (C:\\Dev\\Experimental\\CDK\\simple-app\\lib\\simple-app-stack.ts:24:5)",
+              "Object.<anonymous> (C:\\Dev\\Experimental\\CDK\\simple-app\\bin\\simple-app.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Module.m._compile (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "main (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/SimpleAppStack/MySimpleAppWebsiteBucket/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MySimpleAppWebsiteBucketFB027E82",
+            "trace": [
+              "new Bucket (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\aws-s3\\lib\\bucket.ts:1316:22)",
+              "new SimpleAppStack (C:\\Dev\\Experimental\\CDK\\simple-app\\lib\\simple-app-stack.ts:29:27)",
+              "Object.<anonymous> (C:\\Dev\\Experimental\\CDK\\simple-app\\bin\\simple-app.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Module.m._compile (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "main (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/SimpleAppStack/MySimpleAppWebsiteBucket/Policy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MySimpleAppWebsiteBucketPolicyC9C21209",
+            "trace": [
+              "new BucketPolicy (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\aws-s3\\lib\\bucket-policy.ts:42:21)",
+              "Bucket.addToResourcePolicy (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\aws-s3\\lib\\bucket.ts:488:21)",
+              "Function.addToPrincipalOrResource (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\aws-iam\\lib\\grant.ts:147:45)",
+              "Bucket.grantPublicAccess (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\aws-s3\\lib\\bucket.ts:686:22)",
+              "new Bucket (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\aws-s3\\lib\\bucket.ts:1374:12)",
+              "new SimpleAppStack (C:\\Dev\\Experimental\\CDK\\simple-app\\lib\\simple-app-stack.ts:29:27)",
+              "Object.<anonymous> (C:\\Dev\\Experimental\\CDK\\simple-app\\bin\\simple-app.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Module.m._compile (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "main (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/SimpleAppStack/MySimpleAppDistribution/CFDistribution": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MySimpleAppDistributionCFDistributionEAAE79DF",
+            "trace": [
+              "new CloudFrontWebDistribution (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\aws-cloudfront\\lib\\web_distribution.ts:919:26)",
+              "new SimpleAppStack (C:\\Dev\\Experimental\\CDK\\simple-app\\lib\\simple-app-stack.ts:34:24)",
+              "Object.<anonymous> (C:\\Dev\\Experimental\\CDK\\simple-app\\bin\\simple-app.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Module.m._compile (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "main (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/SimpleAppStack/MysimpleAppWebsiteDeploy/AwsCliLayer/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MysimpleAppWebsiteDeployAwsCliLayer01E38546",
+            "trace": [
+              "new LayerVersion (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\aws-lambda\\lib\\layers.ts:189:39)",
+              "new AwsCliLayer (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\lambda-layer-awscli\\lib\\awscli-layer.ts:12:5)",
+              "new BucketDeployment (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\aws-s3-deployment\\lib\\bucket-deployment.ts:189:16)",
+              "new SimpleAppStack (C:\\Dev\\Experimental\\CDK\\simple-app\\lib\\simple-app-stack.ts:49:5)",
+              "Object.<anonymous> (C:\\Dev\\Experimental\\CDK\\simple-app\\bin\\simple-app.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Module.m._compile (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "main (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/SimpleAppStack/MysimpleAppWebsiteDeploy/CustomResource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MysimpleAppWebsiteDeployCustomResourceB56E719B",
+            "trace": [
+              "new CustomResource (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\core\\lib\\custom-resource.ts:119:21)",
+              "new BucketDeployment (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\aws-s3-deployment\\lib\\bucket-deployment.ts:214:5)",
+              "new SimpleAppStack (C:\\Dev\\Experimental\\CDK\\simple-app\\lib\\simple-app-stack.ts:49:5)",
+              "Object.<anonymous> (C:\\Dev\\Experimental\\CDK\\simple-app\\bin\\simple-app.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Module.m._compile (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "main (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/SimpleAppStack/MySimpleAppLambda/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MySimpleAppLambdaServiceRoleDD0A1010",
+            "trace": [
+              "new Role (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\aws-iam\\lib\\role.ts:327:18)",
+              "new Function (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function.ts:552:31)",
+              "new NodejsFunction (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\aws-lambda-nodejs\\lib\\function.ts:110:5)",
+              "new SimpleAppStack (C:\\Dev\\Experimental\\CDK\\simple-app\\lib\\simple-app-stack.ts:55:23)",
+              "Object.<anonymous> (C:\\Dev\\Experimental\\CDK\\simple-app\\bin\\simple-app.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Module.m._compile (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "main (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/SimpleAppStack/MySimpleAppLambda/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MySimpleAppLambdaServiceRoleDefaultPolicy3D230489",
+            "trace": [
+              "new Policy (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\aws-iam\\lib\\policy.ts:154:22)",
+              "Role.addToPrincipalPolicy (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\aws-iam\\lib\\role.ts:368:28)",
+              "Role.addToPolicy (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\aws-iam\\lib\\role.ts:376:17)",
+              "NodejsFunction.addToRolePolicy (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function-base.ts:263:15)",
+              "new SimpleAppStack (C:\\Dev\\Experimental\\CDK\\simple-app\\lib\\simple-app-stack.ts:72:15)",
+              "Object.<anonymous> (C:\\Dev\\Experimental\\CDK\\simple-app\\bin\\simple-app.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Module.m._compile (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "main (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/SimpleAppStack/MySimpleAppLambda/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MySimpleAppLambda72EF6FEF",
+            "trace": [
+              "new Function (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function.ts:614:35)",
+              "new NodejsFunction (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\aws-lambda-nodejs\\lib\\function.ts:110:5)",
+              "new SimpleAppStack (C:\\Dev\\Experimental\\CDK\\simple-app\\lib\\simple-app-stack.ts:55:23)",
+              "Object.<anonymous> (C:\\Dev\\Experimental\\CDK\\simple-app\\bin\\simple-app.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Module.m._compile (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "main (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/SimpleAppStack/MySimpleAppHttpApi/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MySimpleAppHttpApi79AA9BE2",
+            "trace": [
+              "new HttpApi (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\aws-apigatewayv2\\lib\\http\\api.ts:346:22)",
+              "new SimpleAppStack (C:\\Dev\\Experimental\\CDK\\simple-app\\lib\\simple-app-stack.ts:75:21)",
+              "Object.<anonymous> (C:\\Dev\\Experimental\\CDK\\simple-app\\bin\\simple-app.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Module.m._compile (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "main (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/SimpleAppStack/MySimpleAppHttpApi/DefaultStage/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MySimpleAppHttpApiDefaultStageDBCA8969",
+            "trace": [
+              "new HttpStage (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\aws-apigatewayv2\\lib\\http\\stage.ts:92:5)",
+              "new HttpApi (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\aws-apigatewayv2\\lib\\http\\api.ts:359:27)",
+              "new SimpleAppStack (C:\\Dev\\Experimental\\CDK\\simple-app\\lib\\simple-app-stack.ts:75:21)",
+              "Object.<anonymous> (C:\\Dev\\Experimental\\CDK\\simple-app\\bin\\simple-app.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Module.m._compile (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "main (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/SimpleAppStack/MySimpleAppHttpApi/GET--getAllPhotos/SimpleAppStackMySimpleAppHttpApiGETgetAllPhotos706D1E37-Permission": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MySimpleAppHttpApiGETgetAllPhotosSimpleAppStackMySimpleAppHttpApiGETgetAllPhotos706D1E37PermissionEA649D12",
+            "trace": [
+              "NodejsFunction.addPermission (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function-base.ts:245:5)",
+              "LambdaProxyIntegration.bind (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\aws-apigatewayv2-integrations\\lib\\http\\lambda.ts:39:24)",
+              "new HttpRoute (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\aws-apigatewayv2\\lib\\http\\route.ts:123:38)",
+              "C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\aws-apigatewayv2\\lib\\http\\api.ts:412:36",
+              "Array.map (<anonymous>)",
+              "HttpApi.addRoutes (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\aws-apigatewayv2\\lib\\http\\api.ts:412:20)",
+              "new SimpleAppStack (C:\\Dev\\Experimental\\CDK\\simple-app\\lib\\simple-app-stack.ts:88:13)",
+              "Object.<anonymous> (C:\\Dev\\Experimental\\CDK\\simple-app\\bin\\simple-app.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Module.m._compile (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "main (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/SimpleAppStack/MySimpleAppHttpApi/GET--getAllPhotos/GET--getAllPhotos-Integration/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MySimpleAppHttpApiGETgetAllPhotosGETgetAllPhotosIntegration20EC1EBC",
+            "trace": [
+              "new HttpIntegration (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\aws-apigatewayv2\\lib\\http\\integration.ts:136:19)",
+              "new HttpRoute (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\aws-apigatewayv2\\lib\\http\\route.ts:128:25)",
+              "C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\aws-apigatewayv2\\lib\\http\\api.ts:412:36",
+              "Array.map (<anonymous>)",
+              "HttpApi.addRoutes (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\aws-apigatewayv2\\lib\\http\\api.ts:412:20)",
+              "new SimpleAppStack (C:\\Dev\\Experimental\\CDK\\simple-app\\lib\\simple-app-stack.ts:88:13)",
+              "Object.<anonymous> (C:\\Dev\\Experimental\\CDK\\simple-app\\bin\\simple-app.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Module.m._compile (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "main (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/SimpleAppStack/MySimpleAppHttpApi/GET--getAllPhotos/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MySimpleAppHttpApiGETgetAllPhotosD38A5F4B",
+            "trace": [
+              "new HttpRoute (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\aws-apigatewayv2\\lib\\http\\route.ts:144:19)",
+              "C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\aws-apigatewayv2\\lib\\http\\api.ts:412:36",
+              "Array.map (<anonymous>)",
+              "HttpApi.addRoutes (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\aws-apigatewayv2\\lib\\http\\api.ts:412:20)",
+              "new SimpleAppStack (C:\\Dev\\Experimental\\CDK\\simple-app\\lib\\simple-app-stack.ts:88:13)",
+              "Object.<anonymous> (C:\\Dev\\Experimental\\CDK\\simple-app\\bin\\simple-app.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Module.m._compile (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "main (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/SimpleAppStack/MySimpleAppBucketNameExport": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MySimpleAppBucketNameExport",
+            "trace": [
+              "new SimpleAppStack (C:\\Dev\\Experimental\\CDK\\simple-app\\lib\\simple-app-stack.ts:94:5)",
+              "Object.<anonymous> (C:\\Dev\\Experimental\\CDK\\simple-app\\bin\\simple-app.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Module.m._compile (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "main (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/SimpleAppStack/MySimpleAppWebsiteBucketNameExport": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MySimpleAppWebsiteBucketNameExport",
+            "trace": [
+              "new SimpleAppStack (C:\\Dev\\Experimental\\CDK\\simple-app\\lib\\simple-app-stack.ts:99:5)",
+              "Object.<anonymous> (C:\\Dev\\Experimental\\CDK\\simple-app\\bin\\simple-app.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Module.m._compile (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "main (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/SimpleAppStack/MySimpleAppWebsiteUrl": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MySimpleAppWebsiteUrl",
+            "trace": [
+              "new SimpleAppStack (C:\\Dev\\Experimental\\CDK\\simple-app\\lib\\simple-app-stack.ts:104:5)",
+              "Object.<anonymous> (C:\\Dev\\Experimental\\CDK\\simple-app\\bin\\simple-app.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Module.m._compile (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "main (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/SimpleAppStack/MySimpleAppApi": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MySimpleAppApi",
+            "trace": [
+              "new SimpleAppStack (C:\\Dev\\Experimental\\CDK\\simple-app\\lib\\simple-app-stack.ts:109:5)",
+              "Object.<anonymous> (C:\\Dev\\Experimental\\CDK\\simple-app\\bin\\simple-app.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Module.m._compile (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Object.require.extensions.<computed> [as .ts] (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "main (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1015:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)",
+              "Module.load (internal/modules/cjs/loader.js:879:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/SimpleAppStack/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata",
+            "trace": [
+              "new MetadataResource (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\core\\lib\\private\\metadata-resource.ts:51:24)",
+              "C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:140:5",
+              "visit (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:200:5)",
+              "visit (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:196:5)",
+              "injectMetadataResources (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:131:3)",
+              "Object.synthesize (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:18:3)",
+              "App.synth (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\core\\lib\\stage.ts:188:23)",
+              "process.<anonymous> (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\core\\lib\\app.ts:123:45)",
+              "Object.onceWrapper (events.js:421:26)",
+              "process.emit (events.js:314:20)",
+              "process.EventEmitter.emit (domain.js:483:12)",
+              "process.emit (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\source-map-support\\source-map-support.js:495:21)"
+            ]
+          }
+        ],
+        "/SimpleAppStack/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable",
+            "trace": [
+              "new MetadataResource (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\core\\lib\\private\\metadata-resource.ts:60:27)",
+              "C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:140:5",
+              "visit (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:200:5)",
+              "visit (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:196:5)",
+              "injectMetadataResources (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:131:3)",
+              "Object.synthesize (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:18:3)",
+              "App.synth (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\core\\lib\\stage.ts:188:23)",
+              "process.<anonymous> (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\@aws-cdk\\core\\lib\\app.ts:123:45)",
+              "Object.onceWrapper (events.js:421:26)",
+              "process.emit (events.js:314:20)",
+              "process.EventEmitter.emit (domain.js:483:12)",
+              "process.emit (C:\\Dev\\Experimental\\CDK\\simple-app\\node_modules\\source-map-support\\source-map-support.js:495:21)"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}
