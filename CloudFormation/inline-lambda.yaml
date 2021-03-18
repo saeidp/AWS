@@ -1,0 +1,43 @@
+Description: Serverless Gumtree Scraper
+AWSTemplateFormatVersion: 2010-09-09
+Resources:
+  lambda:
+    Type: AWS::Lambda::Function
+    Properties:
+      Role: !GetAtt lambdaRole.Arn
+      Runtime: python3.8
+      MemorySize: 128
+      Timeout: 600
+      Handler: index.handler
+      Code:
+        ZipFile: |
+          import json
+          import cfnresponse
+          def handler(event, context):
+              print("Event: %s" % json.dumps(event))
+
+  lambdaRole:
+    Type: AWS::IAM::Role
+    Properties:
+      Description: "Assumed by Lambda for operation"
+      AssumeRolePolicyDocument:
+        Version: 2012-10-17
+        Statement:
+          Effect: Allow
+          Principal:
+            Service:
+              - lambda.amazonaws.com
+          Action: sts:AssumeRole
+      ManagedPolicyArns:
+        - "arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole"
+        - "arn:aws:iam::aws:policy/SecretsManagerReadWrite"
+        - "arn:aws:iam::aws:policy/AmazonS3FullAccess"
+        - "arn:aws:iam::aws:policy/AmazonDynamoDBFullAccess"
+        - "arn:aws:iam::aws:policy/AWSDeviceFarmFullAccess"
+Outputs:
+  lambdaArn:
+    Description: ARN for the Lambda Function
+    Value: !GetAtt lambda.Arn
+  lambdaRoleArn:
+    Description: ARN for the IAM Role assumed by the Lambda Function
+    Value: !GetAtt lambdaRole.Arn
