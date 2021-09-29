@@ -13,6 +13,14 @@
     "@aws-cdk/aws-rds:lowercaseDbIdentifier": true,
     "@aws-cdk/aws-efs:defaultEncryptionAtRest": true,
     "@aws-cdk/aws-lambda:recognizeVersionProps": true,
-    "@aws-cdk/aws-cloudfront:defaultSecurityPolicyTLSv1.2_2021": true
+    "@aws-cdk/aws-cloudfront:defaultSecurityPolicyTLSv1.2_2021": true,
+    "vpcid": "vpc-0e787a0ed74ba0420",
+    "cidr": "134.7.253.0/26",
+    "securitygroupname": "dataplatform-ingress",
+    "clusteridentifier": "dataplatform-ods-dev01",
+    "databasename": "dataplatform_ods_dev01",
+    "username": "dataplatform",
+    "kmsalias": "alias/aws/rds"
+
   }
 }
