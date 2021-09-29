@@ -41,7 +41,7 @@ export class AuroraCdkStack extends cdk.Stack {
     sg.addIngressRule(ec2.Peer.ipv4(cidr), ec2.Port.tcp(5432), ingressRuleDescription);
 
     const kmsKey = kms.Alias.fromAliasName(this, 'kmsKey', kmsAlias);
-
+    
     const cluster = new rds.DatabaseCluster(this, "cluster", {
       clusterIdentifier: clusterIdentifier,
       engine: rds.DatabaseClusterEngine.auroraPostgres({ version: rds.AuroraPostgresEngineVersion.VER_13_3 }),
@@ -60,37 +60,14 @@ export class AuroraCdkStack extends cdk.Stack {
           subnetType: ec2.SubnetType.PRIVATE,
         },
         vpc,
-        securityGroups: [sg]
+        securityGroups: [sg],
+        enablePerformanceInsights: true,
+        performanceInsightEncryptionKey: kmsKey,
+        performanceInsightRetention:7,
+        
       },
     });
   }
 }
 
-    //const vpcId = "vpc-0e787a0ed74ba0420";
-
-    //const clusterId = "data-platform-ods-dev01";
-    // const securityGroupId = "dataplatform-ingress";
-    //const secreteUserName = "dataplatform";
-    //const defaultDatabaseName =  "data_platform_ods_dev01";
-
-
-    // const clusterIdentifier = new cdk.CfnParameter(this, 'clusterIdentifier', {
-    //   type: 'String',
-    //   default: "dataplatform-ods-dev01",
-    // });
-    // const defaultDatabaseName = new cdk.CfnParameter(this, 'defaultDatabaseName', {
-    //   type: 'String',
-    //   default: "dataplatform_ods_dev01",
-    // });
-
-    // const securityGroupName = new cdk.CfnParameter(this, 'securityGroupName', {
-    //   type: 'String',
-    //   default: "dataplatform-ingress",
-    // });
-
-    // const secretUserName = new cdk.CfnParameter(this, 'secreteUserName', {
-    //   type: 'String',
-    //   default: "dataplatform",
-    // });
-
-
+    
