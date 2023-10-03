@@ -1,17 +1,21 @@
-// import * as cdk from 'aws-cdk-lib';
-// import { Template } from 'aws-cdk-lib/assertions';
-// import * as Starter from '../lib/starter-stack';
+import * as cdk from 'aws-cdk-lib';
+import { StarterStack } from '../lib/starter-stack';
 
-// example test. To run these tests, uncomment this file along with the
-// example resource in lib/starter-stack.ts
-test('SQS Queue Created', () => {
-//   const app = new cdk.App();
-//     // WHEN
-//   const stack = new Starter.StarterStack(app, 'MyTestStack');
-//     // THEN
-//   const template = Template.fromStack(stack);
+const app = new cdk.App();
 
-//   template.hasResourceProperties('AWS::SQS::Queue', {
-//     VisibilityTimeout: 300
-//   });
+describe('Test the Starter app', () => {
+    test('The app can synthesise fully', () => {
+        expect(() => {
+            app.synth();
+        }).not.toThrow();
+    });
+
+    test('Creates the stack without exception', () => {
+        expect(() => {
+            new StarterStack(app, 'my-cdk-Stack', {
+                appConfig: { appName: 'starter', envName: 'dev' },
+                env: { account: 'fakeaccount', region: 'fakeregion' }
+            });
+        }).not.toThrow();
+    });
 });
