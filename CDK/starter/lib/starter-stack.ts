@@ -20,8 +20,9 @@ export class StarterStack extends cdk.Stack {
     console.log(env.account);
     console.log(env.region)
 
-    // const vpc = new VPC(this, 'my-cdk-vpc');
-    const ec2 = new EC2(this, 'my-cdk-ec2');
+    //const vpc = new VPC(this, 'my-cdk-vpc', { cidrBlock: '10.1.0.0/16' });
+    const vpc = new VPC(this, 'my-cdk-vpc')
+    //const ec2 = new EC2(this, 'my-cdk-ec2');
 
   }
 }

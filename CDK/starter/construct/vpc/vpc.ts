@@ -1,17 +1,25 @@
 import * as ec2 from 'aws-cdk-lib/aws-ec2';
 import { Construct } from 'constructs';
 
+export interface IVPCCidrProps {
+    cidrBlock: string
+}
 
 export class VPC extends Construct {
-    constructor(scope: Construct, id: string) {
+    constructor(scope: Construct, id: string, cidrProps?: IVPCCidrProps) {
         super(scope, id);
 
-        const vpc = new ec2.Vpc(this, 'my-vpc', {
+        let cidr = '10.0.0.0 / 16';
+        if (cidrProps) {
+            cidr = cidrProps.cidrBlock
+        }
+
+        const vpc = new ec2.Vpc(this, 'my-construct-vpc', {
             // nap instance
             // natGatewayProvider: ec2.NatProvider.instance({
             //     instanceType: new ec2.InstanceType('t2.micro'),
             // }),
-            ipAddresses: ec2.IpAddresses.cidr('10.0.0.0/16'),
+            ipAddresses: ec2.IpAddresses.cidr(cidr),
             natGateways: 1,
             maxAzs: 3,
             subnetConfiguration: [
