@@ -1,6 +1,6 @@
 import { App, Stack } from 'aws-cdk-lib';
 import { Template } from 'aws-cdk-lib/assertions';
-import { EC2 } from '../construct/ec2/ec2'
+import { EC2 } from '../../construct/ec2/ec2'
 
 const app = new App();
 const stack = new Stack(app, 'my-cdk-stack', {

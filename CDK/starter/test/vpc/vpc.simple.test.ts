@@ -2,7 +2,7 @@
 
 import { App, Stack } from 'aws-cdk-lib';
 import { Template } from 'aws-cdk-lib/assertions';
-import { IVPCCidrProps, VPC } from '../construct/vpc/vpc'
+import { IVPCCidrProps, VPCSimple } from '../../construct/vpc/vpc-simple/vpc-simple'
 
 // Parameterized stack
 describe('Test the VPC using the createStack function', () => {
@@ -15,7 +15,7 @@ describe('Test the VPC using the createStack function', () => {
             }
         });
 
-        new VPC(stack, 'test-VPC-construct', props);
+        new VPCSimple(stack, 'test-VPC-construct', props);
 
         return stack;
     };
@@ -38,7 +38,7 @@ const app = new App();
 const stack = new Stack(app, 'my-cdk-stack', {
     env: { account: 'fakeaccount', region: 'fakeregion' }
 });
-new VPC(stack, 'my-vpc-construct');
+new VPCSimple(stack, 'my-vpc-construct');
 
 test('VPC instances == 1', () => {
     const template = Template.fromStack(stack);

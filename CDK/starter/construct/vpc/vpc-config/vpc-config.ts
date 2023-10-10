@@ -1,25 +1,25 @@
+import { readFileSync } from 'fs';
 import * as ec2 from 'aws-cdk-lib/aws-ec2';
 import { Construct } from 'constructs';
+import path = require('path');
+import { readVpcConfig } from './utils/vpc-config-io';
 
 export interface IVPCCidrProps {
-    cidrBlock: string
+    readonly cidrBlockPath?: string,
 }
 
-export class VPC extends Construct {
-    constructor(scope: Construct, id: string, cidrProps?: IVPCCidrProps) {
+export class VPCConfig extends Construct {
+    constructor(scope: Construct, id: string, { cidrBlockPath = path.join(__dirname, '../config/vpc-config.json') }: IVPCCidrProps) {
         super(scope, id);
+        console.log(cidrBlockPath);
 
-        let cidr = '10.0.0.0 / 16';
-        if (cidrProps) {
-            cidr = cidrProps.cidrBlock
-        }
+        const config = readVpcConfig(cidrBlockPath);
+        const { cidrBlock } = config
+
+        console.log(cidrBlock)
 
         const vpc = new ec2.Vpc(this, 'my-construct-vpc', {
-            // nap instance
-            // natGatewayProvider: ec2.NatProvider.instance({
-            //     instanceType: new ec2.InstanceType('t2.micro'),
-            // }),
-            ipAddresses: ec2.IpAddresses.cidr(cidr),
+            ipAddresses: ec2.IpAddresses.cidr(cidrBlock),
             natGateways: 1,
             maxAzs: 3,
             subnetConfiguration: [
