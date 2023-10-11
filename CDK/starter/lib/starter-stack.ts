@@ -6,6 +6,7 @@ import { ALB } from '../construct/alb/alb';
 import { VPCConfig } from '../construct/vpc/vpc-config/vpc-config';
 import path = require('path');
 import { Ec2Role } from '../construct/role/Ec2Role';
+import { KmsSimple } from '../construct/kms/kms-simple/kms-simple';
 
 export interface AppConfig {
   appName: string,
@@ -30,9 +31,10 @@ export class StarterStack extends cdk.Stack {
     // const vpc = new VPCSimple(this, 'my-cdk-vpc')
     // const ec2 = new EC2(this, 'my-cdk-ec2');
     // const s3 = new S3(this, 'my-cdk-s3', { bucketName: 'saeid-test-bucket-1258' });
-    const role = new Ec2Role(this, 'my-cdk-ec2-role');
-
+    //const role = new Ec2Role(this, 'my-cdk-ec2-role');
     // new ALB(this, 'LoadBalancerStack');
+    const kmsSimple = new KmsSimple(this, 'my-cdk-kms-simple');
+
 
   }
 }
