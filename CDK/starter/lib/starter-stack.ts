@@ -1,12 +1,14 @@
 import * as cdk from 'aws-cdk-lib';
 import { VPCSimple } from '../construct/vpc/vpc-simple/vpc-simple';
 import { EC2 } from '../construct/ec2/ec2'
-import { S3 } from '../construct/s3/s3';
+import { S3 } from '../construct/s3/s3-simple/s3';
 import { ALB } from '../construct/alb/alb';
 import { VPCConfig } from '../construct/vpc/vpc-config/vpc-config';
 import path = require('path');
 import { Ec2Role } from '../construct/role/Ec2Role';
 import { KmsSimple } from '../construct/kms/kms-simple/kms-simple';
+import { S3TagObject } from '../construct/lambda/tag/s3-tag-object';
+import { CloudWatchSimple } from '../construct/lambda/cloudwatch/cloudwatch';
 
 export interface AppConfig {
   appName: string,
@@ -33,8 +35,10 @@ export class StarterStack extends cdk.Stack {
     // const s3 = new S3(this, 'my-cdk-s3', { bucketName: 'saeid-test-bucket-1258' });
     //const role = new Ec2Role(this, 'my-cdk-ec2-role');
     // new ALB(this, 'LoadBalancerStack');
-    const kmsSimple = new KmsSimple(this, 'my-cdk-kms-simple');
-
+    // const kmsSimple = new KmsSimple(this, 'my-cdk-kms-simple');
+    //const s3TagObject = new S3TagObject(this, 'my-cdk-s3-tag');
+    const cloudwatchSimple = new CloudWatchSimple(this, 'my-cdk-cloudwatch-simple');
 
   }
+
 }
