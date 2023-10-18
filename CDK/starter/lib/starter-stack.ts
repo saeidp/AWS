@@ -11,6 +11,7 @@ import { S3TagObject } from '../construct/lambda/tag/s3-tag-object';
 import { CloudWatchSimple } from '../construct/lambda/cloudwatch/cloudwatch';
 import { S3Policy } from '../construct/s3/s3-policy/s3-policy';
 import { S3Lifecycle } from '../construct/s3/s3-lifecycle/s3-lifecycle';
+import { LambdaWithLayer } from '../construct/lambda/layer/lambda-with-layer';
 
 export interface AppConfig {
   appName: string,
@@ -41,7 +42,8 @@ export class StarterStack extends cdk.Stack {
     // const s3TagObject = new S3TagObject(this, 'my-cdk-s3-tag');
     // const cloudwatchSimple = new CloudWatchSimple(this, 'my-cdk-cloudwatch-simple');
     // const s3Policy = new S3Policy(this, 'my-cdk-s3-policy');
-    const s3Lifecycle = new S3Lifecycle(this, 'my-cdk-s3-lifecycle');
+    // const s3Lifecycle = new S3Lifecycle(this, 'my-cdk-s3-lifecycle');
+    const lambdaWithLayer = new LambdaWithLayer(this, 'my-cdk-lambda-with-layer');
   }
 
 }

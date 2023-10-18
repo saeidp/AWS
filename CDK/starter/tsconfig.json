@@ -22,10 +22,15 @@
     "strictPropertyInitialization": false,
     "typeRoots": [
       "./node_modules/@types"
-    ]
+    ],
+    "baseUrl": "./",
+    "paths": {
+       "/opt/business-logic": ["applications/layer-lambda/layers/business-logic/logic"]
+    }
   },
   "exclude": [
     "node_modules",
     "cdk.out"
   ]
+ 
 }
