@@ -14,6 +14,8 @@ import { S3Lifecycle } from '../construct/s3/s3-lifecycle/s3-lifecycle';
 import { LambdaWithLayer } from '../construct/lambda/layer/lambda-with-layer';
 import { BundleSimpleLambda } from '../construct/lambda/bundle/bundle-simple/bundle-simple-lambda';
 import { BundleLocalLambda } from '../construct/lambda/bundle/bundle-local/bundle-local-lambda';
+import { BundlePythonFunctionLambda } from '../construct/lambda/bundle/bundle-python-function/bundle-python-function-lambda';
+import { CustomResourceProvider } from '../construct/lambda/custom/custom-resource-provider/custom-resource-provider';
 
 export interface AppConfig {
   appName: string,
@@ -49,6 +51,10 @@ export class StarterStack extends cdk.Stack {
     //const bundleLambda = new BundleSimpleLambda(this, 'my-cdk-lambda-bundle');
     // not working. error in cdk synth
     // const bunleLocalLambda = new BundleLocalLambda(this, 'my-cdk-lambda-bundle-local');
-  }
+    // const bundlePythonFunction = new BundlePythonFunctionLambda(this, 'my-cdk-lambda-bundle-python-function');
+    const customResourceProvider = new CustomResourceProvider(this, 'my-cdk-custom-resource-provider', {
+      Message: "Hello world",
+    })
 
+  }
 }
