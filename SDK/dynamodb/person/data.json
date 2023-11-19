@@ -1,5 +1,6 @@
 {
     "people": [
+      {"id": "1", "name": "John", "course": "Computer Science"},
       {"id": "2", "name": "Jane", "course": "Computer Science"},
       {"id": "3", "name": "Janes", "course": "Mathematics"}
     ]
