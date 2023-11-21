@@ -16,6 +16,7 @@ import { BundleSimpleLambda } from '../construct/lambda/bundle/bundle-simple/bun
 import { BundleLocalLambda } from '../construct/lambda/bundle/bundle-local/bundle-local-lambda';
 import { BundlePythonFunctionLambda } from '../construct/lambda/bundle/bundle-python-function/bundle-python-function-lambda';
 import { CustomResourceProvider } from '../construct/lambda/custom/custom-resource-provider/custom-resource-provider';
+import { DynamodbSimpleLambda } from '../construct/lambda/dynamodb/dynamodb-simple/dynamodb-simple-lambda';
 
 export interface AppConfig {
   appName: string,
@@ -52,9 +53,11 @@ export class StarterStack extends cdk.Stack {
     // not working. error in cdk synth
     // const bunleLocalLambda = new BundleLocalLambda(this, 'my-cdk-lambda-bundle-local');
     // const bundlePythonFunction = new BundlePythonFunctionLambda(this, 'my-cdk-lambda-bundle-python-function');
-    const customResourceProvider = new CustomResourceProvider(this, 'my-cdk-custom-resource-provider', {
-      Message: "Hello world",
-    })
+    // const customResourceProvider = new CustomResourceProvider(this, 'my-cdk-custom-resource-provider', {
+    //   Message: "Hello world",
+    // })
+
+    const dynamodbSimpleLambda = new DynamodbSimpleLambda(this, 'my-cdk-dynamodb-simple-lambda');
 
   }
 }
