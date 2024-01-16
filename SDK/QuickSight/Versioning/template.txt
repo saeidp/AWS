@@ -1,0 +1,94 @@
+aws quicksight list-analyses --aws-account-id 271821871271
+aws quicksight describe-analysis --aws-account-id 271821871271 --analysis-id 953f1730-df40-42ef-b6be-3442b20e8f44
+aws quicksight describe-data-set --aws-account-id 271821871271 --data-set-id 95a2e99a-a02b-46e2-8fa4-10abb1c0f4fd
+
+# List Templates
+aws quicksight list-templates --aws-account-id 271821871271
+
+# Create a template. it adds version number 1
+aws quicksight create-template --cli-input-json file://./create_template.json
+create_template.json
+ {
+    "AwsAccountId": "271821871271",
+    "TemplateId": "953f1730-df40-42ef-b6be-3442b20e8f44",
+    "Name": "My Workshop analysis",
+    "VersionDescription": "1.0.0"
+    "SourceEntity": {
+        "SourceAnalysis": {
+            "Arn": "arn:aws:quicksight:ap-southeast-2:271821871271:analysis/953f1730-df40-42ef-b6be-3442b20e8f44",
+            "DataSetReferences": [
+                {
+                    "DataSetPlaceholder": "student_engagement_risk_levels",
+                    "DataSetArn": "arn:aws:quicksight:ap-southeast-2:271821871271:dataset/95a2e99a-a02b-46e2-8fa4-10abb1c0f4fd"
+                }
+            ]
+        }
+    },
+}
+
+
+# List template Versions
+aws quicksight list-template-versions --aws-account-id 271821871271 --template-id "953f1730-df40-42ef-b6be-3442b20e8f44"
+
+# Describe Template
+aws quicksight describe-template --aws-account-id 271821871271 --template-id "953f1730-df40-42ef-b6be-3442b20e8f44"
+
+
+# Describe Template Permissions
+aws quicksight describe-template-permissions --aws-account-id 271821871271 --template-id "953f1730-df40-42ef-b6be-3442b20e8f44"
+
+# Update Template permissions
+aws quicksight update-template-permissions --aws-account-id 271821871271 --template-id 953f1730-df40-42ef-b6be-3442b20e8f44
+ --grant-permissions Actions="quicksight:UpdateTemplatePermissions","quicksight:DescribeTemplate",Principal="arn:aws:quicksight:ap-southeast-2:271821871271:group/default/Admin"
+
+
+# Update template to the latest analysis change.
+# A new version is created. if the old is 2 then it creates 3
+ aws quicksight update-template --cli-input-json file://./update_template.json
+
+update_template.json
+{
+  "AwsAccountId": "271821871271",
+  "TemplateId": "953f1730-df40-42ef-b6be-3442b20e8f44",
+  "Name": "My Workshop analysis template",
+  "VersionDescription": "2.0.0",
+  "SourceEntity": {
+    "SourceAnalysis": {
+      "Arn": "arn:aws:quicksight:ap-southeast-2:271821871271:analysis/953f1730-df40-42ef-b6be-3442b20e8f44",
+      "DataSetReferences": [
+        {
+          "DataSetPlaceholder": "student_engagement_risk_levels",
+          "DataSetArn": "arn:aws:quicksight:ap-southeast-2:271821871271:dataset/95a2e99a-a02b-46e2-8fa4-10abb1c0f4fd"
+        }
+      ]
+    }
+  }
+}
+
+
+# Analysis Rollback- How to update analysis to use the template version 1
+ aws quicksight update-analysis --cli-input-json file://./update_analysis.json
+
+update_analysis.json
+ {
+  "AwsAccountId": "271821871271",
+  "AnalysisId": "953f1730-df40-42ef-b6be-3442b20e8f44",
+  "Name": "My Workshop analysis",
+  "SourceEntity": {
+    "SourceTemplate": {
+      "DataSetReferences": [
+        {
+          "DataSetPlaceholder": "student_engagement_risk_levels",
+          "DataSetArn": "arn:aws:quicksight:ap-southeast-2:888142126615:dataset/95a2e99a-a02b-46e2-8fa4-10abb1c0f4fd"
+        }
+      ],
+      "Arn": "arn:aws:quicksight:ap-southeast-2:271821871271:template/953f1730-df40-42ef-b6be-3442b20e8f44/version/1"
+    }
+  }
+}
+
+
+
+# Delete template
+aws quicksight delete-template --aws-account-id 271821871271 --template-id 953f1730-df40-42ef-b6be-3442b20e8f44
+

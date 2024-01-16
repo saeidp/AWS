@@ -1,0 +1,9 @@
+{
+    "dsn": [
+        {
+            "name": "Athena",
+            "dev": "0654addc-1d2c-4905-9e1c-1a522aa3ebcf",
+            "test": "0654addc-1d2c-4905-9e1c-1a522aa3ebcf"
+        }
+    ]
+}

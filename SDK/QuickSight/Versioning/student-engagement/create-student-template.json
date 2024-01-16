@@ -1,0 +1,17 @@
+{
+    "AwsAccountId": "271821871271",
+    "TemplateId": "d8e81986-8f95-4872-bf58-3295960654d4",
+    "Name": "Student Engagement Release 2 template",
+    "VersionDescription": "2.0.6",
+    "SourceEntity": {
+        "SourceAnalysis": {
+            "Arn": "arn:aws:quicksight:ap-southeast-2:271821871271:analysis/d8e81986-8f95-4872-bf58-3295960654d4",
+            "DataSetReferences": [
+                {
+                    "DataSetPlaceholder": "student-engagement-blackboard-crm-dataset",
+                    "DataSetArn": "arn:aws:quicksight:ap-southeast-2:271821871271:dataset/68f7750e-1813-47eb-a930-a2b5f0086b30"
+                }
+            ]
+        }
+    }
+}

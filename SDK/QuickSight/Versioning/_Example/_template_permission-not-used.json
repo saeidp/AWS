@@ -1,0 +1,6 @@
+[
+    {
+    "Principal": "arn:aws:iam::888142126615:root",
+    "Actions": ["quicksight:UpdateTemplatePermissions","quicksight:DescribeTemplate"]
+    }
+    ]

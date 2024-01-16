@@ -1,0 +1,21 @@
+{
+  "AwsAccountId": "271821871271",
+  "TemplateId": "ee1cc521-32d8-4429-844a-55572b7b4f96",
+  "Name": "Student Engagement Executive 1.0.0 template",
+  "VersionDescription": "1.0.0",
+  "SourceEntity": {
+      "SourceAnalysis": {
+          "Arn": "arn:aws:quicksight:ap-southeast-2:271821871271:analysis/ee1cc521-32d8-4429-844a-55572b7b4f96",
+          "DataSetReferences": [
+            {
+                "DataSetPlaceholder": "Student Engagement: Executive Dashboard",
+                "DataSetArn": "arn:aws:quicksight:ap-southeast-2:271821871271:dataset/fae9a031-5e4d-43f0-83fa-a96976e1edea"
+            },
+            {
+                "DataSetPlaceholder": "Study Periods",
+                "DataSetArn": "arn:aws:quicksight:ap-southeast-2:271821871271:dataset/32954454-a99d-47de-9389-820aabd2364e" 
+            }
+        ]
+      }
+  }
+}

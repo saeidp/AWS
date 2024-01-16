@@ -1,0 +1,17 @@
+{
+  "AwsAccountId": "888142126615",
+  "TemplateId": "953f1730-df40-42ef-b6be-3442b20e8f44",
+  "Name": "My Workshop analysis template",
+  "VersionDescription": "2.0.0",
+  "SourceEntity": {
+    "SourceAnalysis": {
+      "Arn": "arn:aws:quicksight:ap-southeast-2:888142126615:analysis/953f1730-df40-42ef-b6be-3442b20e8f44",
+      "DataSetReferences": [
+        {
+          "DataSetPlaceholder": "student_engagement_risk_levels",
+          "DataSetArn": "arn:aws:quicksight:ap-southeast-2:888142126615:dataset/95a2e99a-a02b-46e2-8fa4-10abb1c0f4fd"
+        }
+      ]
+    }
+  }
+}

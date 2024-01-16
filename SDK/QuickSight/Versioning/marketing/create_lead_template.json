@@ -1,0 +1,17 @@
+{
+    "AwsAccountId": "271821871271",
+    "TemplateId": "4099f957-a0ab-4448-9c1c-4060ef2d4e3f",
+    "Name": "Marketo Overview 1.0.0 template",
+    "VersionDescription": "1.0.0",
+    "SourceEntity": {
+        "SourceAnalysis": {
+            "Arn": "arn:aws:quicksight:ap-southeast-2:271821871271:analysis/4099f957-a0ab-4448-9c1c-4060ef2d4e3f",
+            "DataSetReferences": [
+                {
+                    "DataSetPlaceholder": "lead",
+                    "DataSetArn": "arn:aws:quicksight:ap-southeast-2:271821871271:dataset/d632a4ea-9d07-4995-9abf-611de128ee86"
+                }
+            ]
+        }
+    }
+}

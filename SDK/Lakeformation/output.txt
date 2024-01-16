@@ -1,0 +1,2 @@
+wifi_cmx_access_point_list
+wifi_cmx_event_association
