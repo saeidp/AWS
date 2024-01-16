@@ -1,0 +1,112 @@
+{
+    "schema": {
+    "properties": {
+      "studentorparent": {
+        "type": "string"
+      },
+      "residentialStatus": {
+        "type": "string"
+      },
+      "undergradorpostgrad": {
+        "type": "string"
+      },
+      "optinGlobal": {
+        "type": "string"
+      },
+      "levelofeducation": {
+        "type": "string"
+      },
+      "domesticRegion": {
+        "type": "string"
+      },
+      "country": {
+        "type": "string"
+      },
+      "studyAreaofInterest": {
+        "type": "string"
+      },
+      "preferredStudyLoad": {
+        "type": "string"
+      },
+      "preferredStudyMethod": {
+        "type": "string"
+      },
+      "year": {
+        "type": "string"
+      },
+      "halfyear": {
+        "type": "string"
+      },
+      "acquisitionProgramName": {
+        "type": "string"
+      },
+      "id": {
+        "type": "integer"
+      },
+      "mktoAcquisitionDate": {
+        "type": "string"
+      },
+      "unsubscribed": {
+        "type": "string"
+      },
+      "unsubscribedReason": {
+        "type": "string"
+      },
+      "leadScore": {
+        "type": "string"
+      },
+      "createdAt": {
+        "type": "string"
+      },
+      "updatedAt": {
+        "type": "string"
+      },
+      "inferredCountry": {
+        "type": "string"
+      },
+      "inferredCity": {
+        "type": "string"
+      },
+      "inferredStateRegion": {
+        "type": "string"
+      },
+      "inferredPostalCode": {
+        "type": "string"
+      },
+      "courseInterest": {
+        "type": "string"
+      },
+      "courseoffered": {
+        "type": "string"
+      },
+      "leadSource": {
+        "type": "string"
+      },
+      "faculty": {
+        "type": "string"
+      },
+      "attributionFirstCampaign": {
+        "type": "string"
+      },
+      "attributionFirstSource": {
+        "type": "string"
+      },
+      "attributionFirstMedium": {
+        "type": "string"
+      },
+      "attributionLastCampaign": {
+        "type": "string"
+      },
+      "attributionLastSource": {
+        "type": "string"
+      },
+      "attributionLastMedium": {
+        "type": "string"
+      },
+      "leadSourceReportStage": {
+        "type": "string"
+      }
+
+    }
+  }
+}
