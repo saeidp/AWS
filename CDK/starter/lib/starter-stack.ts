@@ -17,6 +17,7 @@ import { BundleLocalLambda } from '../construct/lambda/bundle/bundle-local/bundl
 import { BundlePythonFunctionLambda } from '../construct/lambda/bundle/bundle-python-function/bundle-python-function-lambda';
 import { CustomResourceProvider } from '../construct/lambda/custom/custom-resource-provider/custom-resource-provider';
 import { DynamodbSimpleLambda } from '../construct/lambda/dynamodb/dynamodb-simple/dynamodb-simple-lambda';
+import { VPCLookup } from '../construct/vpc/vpc-lookup/vpc-lookup';
 
 export interface AppConfig {
   appName: string,
@@ -39,25 +40,36 @@ export class StarterStack extends cdk.Stack {
     // const vpcConfig = new VPCConfig(this, 'my-cdk-vpc-config', { cidrBlockPath: path.join(__dirname, '../config/vpc-config.json') });
     // const vpcSimple = new VPCSimple(this, 'my-cdk-vpc', { cidrBlock: '10.1.0.0/16' });
     // const vpc = new VPCSimple(this, 'my-cdk-vpc')
+    // const vpcLookup = new VPCLookup(this, 'my-cdk-vpc-Lookup');
+
+    
     // const ec2 = new EC2(this, 'my-cdk-ec2');
+    
     // const s3 = new S3(this, 'my-cdk-s3', { bucketName: 'saeid-test-bucket-1258' });
-    //const role = new Ec2Role(this, 'my-cdk-ec2-role');
-    // new ALB(this, 'LoadBalancerStack');
-    // const kmsSimple = new KmsSimple(this, 'my-cdk-kms-simple');
-    // const s3TagObject = new S3TagObject(this, 'my-cdk-s3-tag');
-    // const cloudwatchSimple = new CloudWatchSimple(this, 'my-cdk-cloudwatch-simple');
     // const s3Policy = new S3Policy(this, 'my-cdk-s3-policy');
     // const s3Lifecycle = new S3Lifecycle(this, 'my-cdk-s3-lifecycle');
+    // const s3TagObject = new S3TagObject(this, 'my-cdk-s3-tag');
+    
     // const lambdaWithLayer = new LambdaWithLayer(this, 'my-cdk-lambda-with-layer');
+    
+    //const role = new Ec2Role(this, 'my-cdk-ec2-role');
+    
+    // new ALB(this, 'LoadBalancerStack');
+    
+    // const kmsSimple = new KmsSimple(this, 'my-cdk-kms-simple');
+    
+    // const cloudwatchSimple = new CloudWatchSimple(this, 'my-cdk-cloudwatch-simple');
+    
     //const bundleLambda = new BundleSimpleLambda(this, 'my-cdk-lambda-bundle');
     // not working. error in cdk synth
     // const bunleLocalLambda = new BundleLocalLambda(this, 'my-cdk-lambda-bundle-local');
     // const bundlePythonFunction = new BundlePythonFunctionLambda(this, 'my-cdk-lambda-bundle-python-function');
+    
     // const customResourceProvider = new CustomResourceProvider(this, 'my-cdk-custom-resource-provider', {
     //   Message: "Hello world",
     // })
 
-    const dynamodbSimpleLambda = new DynamodbSimpleLambda(this, 'my-cdk-dynamodb-simple-lambda');
+    // const dynamodbSimpleLambda = new DynamodbSimpleLambda(this, 'my-cdk-dynamodb-simple-lambda');
 
   }
 }
