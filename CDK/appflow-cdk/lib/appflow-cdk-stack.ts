@@ -50,7 +50,7 @@ export class AppflowCdkStack extends cdk.Stack {
         connectorProfileCredentials: {
           serviceNow: {
             username: "appFlow.knowledge.connector",
-            password: "Oc4Q12EI#a6),RdxN7[wAtQs>kGlIeC&%GGS9nqD"
+            password: "xxxxxxxxxxxxxxxx"
           },
 
 
