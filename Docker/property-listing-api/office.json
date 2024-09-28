@@ -1,0 +1,92 @@
+[
+  {
+    "created_at": "2019-01-30 07:15:05",
+    "title": "St Georges Terrace",
+    "price_per_month": 1900,
+    "seats": 8,
+    "sqm": 300,
+    "profile_image": "https://images.unsplash.com/photo-1562184760-a11b3cf7c169?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80",
+    "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes."
+  },
+  {
+    "created_at": "2019-02-30 07:15:05",
+    "title": "Murray Street",
+    "price_per_month": 1700,
+    "seats": 6,
+    "sqm": 320,
+    "profile_image": "https://images.unsplash.com/photo-1497366754035-f200968a6e72?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80",
+    "description": "A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot."
+  },
+  {
+    "created_at": "2019-03-30 07:15:05",
+    "title": "Barrack Street",
+    "price_per_month": 1750,
+    "seats": 6,
+    "sqm": 280,
+    "profile_image": "https://images.unsplash.com/photo-1531973576160-7125cd663d86?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80",
+    "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,"
+  },
+  {
+    "created_at": "2019-03-24 07:15:05",
+    "title": "Hay Street ",
+    "price_per_month": 1500,
+    "seats": 8,
+    "sqm": 300,
+    "profile_image": "https://images.unsplash.com/photo-1497366811353-6870744d04b2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80",
+    "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis."
+  },
+  {
+    "created_at": "2019-06-30 07:15:05",
+    "title": "William Street",
+    "price_per_month": 1300,
+    "seats": 4,
+    "sqm": 180,
+    "profile_image": "https://images.unsplash.com/photo-1556761175-4b46a572b786?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1567&q=80",
+    "description": "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound."
+  },
+  {
+    "created_at": "2019-04-04 07:15:05",
+    "title": "Wellington Street",
+    "price_per_month": 1200,
+    "seats": 3,
+    "sqm": 160,
+    "profile_image": "https://images.unsplash.com/photo-1517502884422-41eaead166d4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1525&q=80",
+    "description": "Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, litot Europa usa li sam vocabular."
+  },
+  {
+    "created_at": "2019-04-30 07:15:05",
+    "title": "Adelaide Terrace",
+    "price_per_month": 980,
+    "seats": 3,
+    "sqm": 180,
+    "profile_image": "https://images.unsplash.com/photo-1549637642-90187f64f420?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1953&q=80",
+    "description": "The European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc, Europe uses the same vocabulary."
+  },
+  {
+    "created_at": "2019-08-30 07:15:05",
+    "title": "Kings Park Road",
+    "price_per_month": 850,
+    "seats": 2,
+    "sqm": 120,
+    "profile_image": "https://images.unsplash.com/photo-1505409859467-3a796fd5798e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80",
+    "description": "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts."
+  },
+  {
+    "created_at": "2019-07-30 07:15:05",
+    "title": "Roe Street",
+    "price_per_month": 690,
+    "seats": 1,
+    "sqm": 70,
+    "profile_image": "https://images.unsplash.com/photo-1527192491265-7e15c55b1ed2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80",
+    "description": "The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs."
+  },
+  {
+    "created_at": "2019-01-30 07:15:05",
+    "title": "Aberdeen Street",
+    "price_per_month": 1900,
+    "seats": 8,
+    "sqm": 300,
+    "profile_image": "https://images.unsplash.com/photo-1498409785966-ab341407de6e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1960&q=80",
+    "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes."
+  }
+]
