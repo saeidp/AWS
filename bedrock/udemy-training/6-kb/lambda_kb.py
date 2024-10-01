@@ -6,6 +6,8 @@
 # select above s3 bucket name
 # for vector database use Open Search serverless
 # for foundation model use anthropic.claude-3-haiku-20240307-v1:0
+# KB creates its role to make it able to invoke model (embed) and opensearch and S3 access
+# for lambda role you need to add bedrock access (full access)
 
 import json
 import boto3
