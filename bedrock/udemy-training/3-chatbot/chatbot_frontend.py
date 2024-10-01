@@ -4,7 +4,7 @@
 
 #1 import streamlit and chatbot file
 import streamlit as st 
-import  chatbot_backend as chatbot  #**Import your Chatbot file as demo
+import  chatbot.chatbot_backend_claude3 as chatbot  #**Import your Chatbot file as demo
 
 #2 Set Title for Chatbot - https://docs.streamlit.io/library/api-reference/text/st.title
 st.title("Hi, This is Chatbot Anisha :sunglasses:") # **Modify this based on the title you want in want
