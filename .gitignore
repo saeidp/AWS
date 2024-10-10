@@ -351,3 +351,6 @@ MigrationBackup/
 
 #aws-sam
 .aws-sam/
+
+# Jupyter
+.ipynb_checkpoints/
