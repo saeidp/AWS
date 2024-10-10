@@ -1,0 +1,92 @@
+// Request in Lex
+{
+    "botAliasId": "TSTALIASID",
+    "botId": "SQLDV62ZQ1",
+    "localeId": "en_AU",
+    "text": "what is vpc",
+    "sessionId": "702209111549821"
+}
+
+
+// Event recieved in lambda
+{
+    inputMode: 'Text',
+    sessionId: '702209111549454',
+    inputTranscript: 'what is vpc',
+    interpretations: [
+      {
+        interpretationSource: 'Lex',
+        nluConfidence: 0.91,
+        intent: [Object]
+      },
+      { interpretationSource: 'Lex', intent: [Object] }
+    ],
+    bot: {
+      aliasId: 'TSTALIASID',
+      aliasName: 'TestBotAlias',
+      name: '285833d-bot',
+      version: 'DRAFT',
+      localeId: 'en_AU',
+      id: 'SQLDV62ZQ1'
+    },
+    responseContentType: 'text/plain; charset=utf-8',
+    sessionState: {
+      originatingRequestId: '3985fe9f-ae8d-486b-b0a7-86f6c5c5728e',
+      sessionAttributes: {},
+      activeContexts: [],
+      intent: {
+        confirmationState: 'None',
+        name: '285833d-intent',
+        slots: {},
+        state: 'ReadyForFulfillment'
+      }
+    },
+    messageVersion: '1.0',
+    invocationSource: 'FulfillmentCodeHook'
+}
+
+
+// Email received back by lex
+{
+    "messages": [
+     {
+      "content": "VPC stands for Virtual Private Cloud, and it is a core service offered by Amazon Web Services (AWS). A VPC is a virtual network that you can create and control in the AWS cloud.\n\nHere are some key things to know about VPCs:\n\n1. Isolation: VPCs provide a private, isolated virtual network within the AWS cloud. This allows you to launch your AWS resources, such as EC2 instances, in a secure and customizable virtual network environment.",
+      "contentType": "PlainText"
+     }
+    ],
+    "sessionState": {
+     "dialogAction": {
+      "type": "Close"
+     },
+     "intent": {
+      "name": "285833d-intent",
+      "slots": {},
+      "state": "Fulfilled",
+      "confirmationState": "None"
+     },
+     "sessionAttributes": {},
+     "originatingRequestId": "f6fd3432-e364-4b08-ac15-01447b186bb7"
+    },
+    "interpretations": [
+     {
+      "nluConfidence": {
+       "score": 0.92
+      },
+      "intent": {
+       "name": "285833d-intent",
+       "slots": {},
+       "state": "Fulfilled",
+       "confirmationState": "None"
+      }
+     },
+     {
+      "intent": {
+       "name": "FallbackIntent",
+       "slots": {}
+      },
+      "interpretationSource": "Lex"
+     }
+    ],
+    "requestAttributes": {},
+    "sessionId": "702209111549821"
+   }
