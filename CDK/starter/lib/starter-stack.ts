@@ -62,7 +62,7 @@ export class StarterStack extends cdk.Stack {
 
     //const bundleLambda = new BundleSimpleLambda(this, 'my-cdk-lambda-bundle');
     // not working. error in cdk synth
-    const bunleLocalLambda = new BundleLocalLambda(this, 'my-cdk-lambda-bundle-local');
+    // const bunleLocalLambda = new BundleLocalLambda(this, 'my-cdk-lambda-bundle-local');
     // const bundlePythonFunction = new BundlePythonFunctionLambda(this, 'my-cdk-lambda-bundle-python-function');
 
     // const customResourceProvider = new CustomResourceProvider(this, 'my-cdk-custom-resource-provider', {
