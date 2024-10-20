@@ -24,6 +24,7 @@ export class BundleLocalLambda extends Construct {
                     command: [],
                     local: {
                         tryBundle(outputDir: string) {
+                            console.log(outputDir);
                             try {
                                 execSync('pip --version');
                             } catch {
@@ -32,7 +33,7 @@ export class BundleLocalLambda extends Construct {
 
                             const commands = [
                                 `cd applications/bundle-local-lambda`,
-                                `pip install -r requirements.txt -t ${outputDir}`,
+                                `pip install -r requirements.txt -t ${outputDir} --index-url https://pypi.org/simple`,
                                 `cp -a . ${outputDir}`
                             ];
 
