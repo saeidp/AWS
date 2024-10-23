@@ -1,0 +1,18 @@
+{
+    "name": "js-lambda",
+    "version": "1.0.0",
+    "description": "",
+    "main": "bundleLocalLambdaTypescript.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "voca": "^1.4.0"
+    },
+    "devDependencies": {
+        "@types/voca": "^1.4.6"
+    },
+    "module": "true"
+}

@@ -13,6 +13,7 @@ import { S3Policy } from '../construct/s3/s3-policy/s3-policy';
 import { S3Lifecycle } from '../construct/s3/s3-lifecycle/s3-lifecycle';
 import { LambdaWithLayer } from '../construct/lambda/layer/lambda-with-layer';
 import { BundleSimpleLambda } from '../construct/lambda/bundle/bundle-simple/bundle-simple-lambda';
+import { BundleLocalLambdaTypescript } from '../construct/lambda/bundle/bundle-local/bundle-local-lambda-typescript';
 import { BundleLocalLambda } from '../construct/lambda/bundle/bundle-local/bundle-local-lambda';
 import { BundlePythonFunctionLambda } from '../construct/lambda/bundle/bundle-python-function/bundle-python-function-lambda';
 import { CustomResourceProvider } from '../construct/lambda/custom/custom-resource-provider/custom-resource-provider';
@@ -61,7 +62,7 @@ export class StarterStack extends cdk.Stack {
     // const cloudwatchSimple = new CloudWatchSimple(this, 'my-cdk-cloudwatch-simple');
 
     //const bundleLambda = new BundleSimpleLambda(this, 'my-cdk-lambda-bundle');
-    // not working. error in cdk synth
+    const bunleLocalLambdaTypescript = new BundleLocalLambdaTypescript(this, 'my-cdk-lambda-bundle-local-typescript');
     // const bunleLocalLambda = new BundleLocalLambda(this, 'my-cdk-lambda-bundle-local');
     // const bundlePythonFunction = new BundlePythonFunctionLambda(this, 'my-cdk-lambda-bundle-python-function');
 
