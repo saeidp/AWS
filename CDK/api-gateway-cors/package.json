@@ -1,0 +1,32 @@
+{
+  "name": "aida-agent",
+  "version": "0.1.0",
+  "bin": {
+    "aida-agent": "bin/aida-agent.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "test": "jest",
+    "cdk": "cdk",
+    "login": "aws codeartifact login --tool npm --domain curtin --domain-owner 791226210878 --repository chatbot-repo --namespace dummy"
+
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.12",
+    "@types/node": "^22.5.4",
+    "aws-cdk": "2.151.0",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.2.5",
+    "ts-node": "^10.9.2",
+    "typescript": "~5.6.2"
+  },
+  "dependencies": {
+    "@assembly-line-base/apigateway-restapi": "^2.0.4",
+    "@assembly-line-base/lambda-function": "^2.0.4",
+    "@assembly-line-core/common": "^0.5.0",
+    "aws-cdk-lib": "2.151.0",
+    "constructs": "^10.0.0",
+    "source-map-support": "^0.5.21"
+  }
+}

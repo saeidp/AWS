@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CORS Test</title>
+</head>
+<body>
+    <h1>CORS Test</h1>
+    <button id="testButton">Test API</button>
+
+    <script>
+        document.getElementById("testButton").addEventListener("click", async function() {
+            try {
+                const response = await fetch('https://w8sbxh6bp3.execute-api.ap-southeast-2.amazonaws.com/dev/api/getAgent', {
+                    method: 'GET',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    }
+                });
+
+                const data = await response.json();
+                console.log('Response data:', data);
+            } catch (error) {
+                console.error('Error:', error);
+            }
+        });
+    </script>
+</body>
+</html>
