@@ -11,6 +11,7 @@
         "watch": "tsc -w",
         "login": "aws codeartifact login --tool npm --domain curtin --domain-owner 791226210878 --repository chatbot-repo --namespace dummy"
     },
+    "type": "module",
     "author": "Saeid Pahlevan",
     "license": "ISC",
     "dependencies": {

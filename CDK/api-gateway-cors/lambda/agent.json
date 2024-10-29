@@ -1,7 +1,7 @@
 [
     {
       "ID": "0fa3e68a-e8ba-413b-9371-e505ea211b45",
-      "Name": "Health Science",
+      "Name": "HEALTH-SCIENCE",
       "description": "Supports health sciences students with course information and clinical placements."
     },
     {
@@ -9,4 +9,4 @@
       "Name": "LITEC",
       "description": "Supports learning and teaching excellence through educational resources and guidance."
     }
-  ]
+]
