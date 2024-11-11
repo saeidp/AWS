@@ -10,7 +10,6 @@
     "test": "jest",
     "cdk": "cdk",
     "login": "aws codeartifact login --tool npm --domain curtin --domain-owner 791226210878 --repository chatbot-repo --namespace dummy"
-
   },
   "devDependencies": {
     "@types/jest": "^29.5.12",
@@ -26,6 +25,7 @@
     "@assembly-line-base/lambda-function": "^2.0.4",
     "@assembly-line-core/common": "^0.5.0",
     "aws-cdk-lib": "2.151.0",
+    "aws-jwt-verify": "^4.0.1",
     "constructs": "^10.0.0",
     "source-map-support": "^0.5.21"
   }

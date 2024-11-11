@@ -8,6 +8,7 @@ import { AuthorizationType, LambdaIntegration, MockIntegration, PassthroughBehav
 import { Code, LayerVersion, Runtime, Tracing } from 'aws-cdk-lib/aws-lambda';
 import { Role, ServicePrincipal, Effect, PolicyDocument, PolicyStatement } from 'aws-cdk-lib/aws-iam';
 
+
 import { Construct } from 'constructs';
 import * as path from 'path';
 
@@ -46,7 +47,9 @@ private readonly _agentsLambda: BaseLambdaFunction;
         'dynamodb:Query',
         'dynamodb:Scan',
         'dynamodb:BatchGetItem',
+        'cloudwatch:*',
       ],
+      effect: Effect.ALLOW,
       resources: ["*"], // Restrict to specific DynamoDB table
     }));
 

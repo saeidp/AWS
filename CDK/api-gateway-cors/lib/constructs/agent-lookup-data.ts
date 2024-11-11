@@ -46,6 +46,7 @@ private readonly _agentLookupLambda: BaseLambdaFunction;
         'dynamodb:Query',
         'dynamodb:Scan',
         'dynamodb:BatchGetItem',
+        'cloudwatch:*',
       ],
       resources: ["*"], // Restrict to specific DynamoDB table
     }));

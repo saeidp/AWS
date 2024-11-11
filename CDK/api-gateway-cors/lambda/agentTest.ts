@@ -5,8 +5,8 @@ import * as jwt from 'jsonwebtoken';
 import { fileURLToPath } from 'url';
 
 // Construct __dirname manually - because of module in tsconfig
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
+// const __filename = fileURLToPath(import.meta.url);
+// const __dirname = path.dirname(__filename);
 
 interface Agent {
   ID: number;

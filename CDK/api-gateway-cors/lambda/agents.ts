@@ -1,46 +1,59 @@
-import * as fs from 'fs';
-import * as path from 'path';
-import { APIGatewayProxyHandler } from 'aws-lambda';
-import type { Handler } from 'aws-lambda';
+import * as fs from "fs";
+import * as path from "path";
+import {
+  APIGatewayProxyEvent,
+  APIGatewayProxyResult,
+  APIGatewayProxyHandler,
+} from "aws-lambda";
 
 // Define the type for the objects in the JSON file
-interface Item {
+interface Agent {
   ID: number;
   Name: string;
   description: string;
 }
 
-// const corsHeaders = {
-//   'Access-Control-Allow-Origin': '*',
-//   'Access-Control-Allow-Headers': 'Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token',
-//   'Access-Control-Allow-Methods': 'OPTIONS,GET'
-// };
-// The handler function
-export const handler: Handler = async (event: any) => {
-
+export const handler: APIGatewayProxyHandler = async (
+  event: APIGatewayProxyEvent
+): Promise<APIGatewayProxyResult> => {
   try {
     // Path to the data.json file inside the Lambda environment
-    const filePath = path.join(__dirname, 'data.json');
+    const filePath = path.join(__dirname, "agent.json");
 
     // Read and parse the file
-    const fileContent = fs.readFileSync(filePath, 'utf-8');
-    const items: Item[] = JSON.parse(fileContent);
+    const fileContent = fs.readFileSync(filePath, "utf-8");
+    const agents: Agent[] = JSON.parse(fileContent);
 
     // Return the items as a JSON response
     return {
       statusCode: 200,
-      body: JSON.stringify(items),
-      headers: {
-          "Content-Type": "application/json", // Ensures JSON response
-      },
+      body: JSON.stringify(agents),
+      // body: JSON.stringify("hello"),
 
+      headers: {
+        "Content-Type": "application/json", // Ensures JSON response
+      },
     };
   } catch (error) {
-    console.error('Error reading or parsing the file:', error);
+    console.error("Error reading or parsing the file:", error);
     return {
       statusCode: 500,
-      body: JSON.stringify({ message: 'Internal Server Error' }),
+      body: JSON.stringify({ message: "Internal Server Error" }),
     };
   }
+};
 
-}
+(async () => {
+  const tokenPath = path.join(__dirname, "token.txt");
+  const encodedToken = fs.readFileSync(tokenPath, "utf-8");
+
+  const mockEvent: APIGatewayProxyEvent = {
+    headers: {
+      Authorization: `Bearer ${encodedToken}`,
+    },
+    // Add other necessary properties here for the APIGatewayProxyEvent
+  } as any;
+
+  const response = await handler(mockEvent, {} as any, {} as any);
+  console.log(response);
+})();
