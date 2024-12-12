@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "ES2019",                   // Specifies ECMAScript target version
+    "module": "CommonJS",                 // Sets module code generation
+    "strict": true,                       // Enables all strict type-checking options
+    "esModuleInterop": true,              // Enables compatibility between CommonJS and ES Modules
+    "skipLibCheck": true,                 // Skips type checking of declaration files
+    "forceConsistentCasingInFileNames": true, // Disallows inconsistently-cased references to the same file
+    "moduleResolution": "node",           // Determines how modules are resolved
+    "outDir": "./dist",                   // Redirects output structure to the directory
+    "rootDir": "./src",                   // Specifies the root directory of input files
+    "baseUrl": "./",                      // Base directory to resolve non-relative module names
+    "paths": {
+      "*": ["node_modules/*"]
+    }
+  },
+  "include": ["src/**/*.ts"],             // Specifies files to include in the compilation
+  "exclude": ["node_modules", "dist"]     // Specifies files to exclude from the compilation
+}
