@@ -1,0 +1,49 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# --- Generated / live AWS org data: never commit ---
+# Tag-compliance reports (contain account IDs, ARNs, resource tags)
+account_reports/**/*.csv
+account_reports/**/*.json
+account_reports/**/*.html
+account_reports/reports/
+
+# Account-owner data (contains account IDs, root emails, staff names)
+accounts-owner/*.json
+accounts-owner/*.tsv
+accounts-owner/*.txt
+accounts-owner/*.csv
+accounts-owner/*.log
+!accounts-owner/README.md
+
+# --- Belt-and-braces: no data file lands in git wherever it is written ---
+# The scripts take arbitrary output paths (-o, --dump-cache, <output_dir>), so
+# the per-directory rules above are not enough on their own. No tracked file in
+# this repo uses these extensions; use `git add -f` for a deliberate exception.
+*.csv
+*.tsv
+*.json
+*.html
+*.log
+*.txt
+*.out
+
+# Vendored binaries / archives
+wizcli
+*.tgz
+
+# Local environment: holds the real OWNER_TAG_PREFIX for this org
+.env
+.env.local
+!.env.example
+
+# Local editor / tooling state
+.claude/settings.local.json
